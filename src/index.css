@@ -1,0 +1,42 @@
+
+body {
+background-color:#fff;
+margin: 0 auto; 
+
+}
+
+
+h1{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 1.9em;
+  letter-spacing: 2px;
+}
+
+h2{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 1.6em;
+
+}
+
+h3{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin: 0 16px 0 16px;
+  margin-bottom:0;
+  text-decoration: none;
+}
+
+p{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+a{
+  text-decoration: none;
+}
+
+

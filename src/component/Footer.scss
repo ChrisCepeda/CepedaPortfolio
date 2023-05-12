@@ -1,0 +1,158 @@
+.footer{
+    background-color: rgb(109, 126, 120);
+    margin-bottom: 1rem;
+    padding: 38px;
+  
+    
+    @media only screen and (max-width: 920px){
+      margin: 0;
+    }
+     
+  
+   .footer-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 20px;
+    
+    @media screen and (max-width: 767px){
+        grid-template-columns:1fr ;
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    a:hover {
+   
+        color: rgb(25, 61, 49);
+    }
+}
+
+
+.footer-title p {
+  
+    border-bottom: solid 1.5px #fff;
+    color: #fff;
+    font-family:'Barlow Semi Condensed', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    
+}
+.footer-title p:hover {
+   
+    color: rgb(25, 61, 49);
+}
+
+// CONTACT GRID
+.contact{
+    text-align: center;
+
+
+.footer-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+}
+
+.footer-mail,
+.footer-linked,
+.footer-github{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.footer-mail:hover,
+.footer-linked:hover, 
+.footer-github:hover{
+    color: rgb(25, 61, 49);
+    
+}
+}
+
+//SUBSCRIPTION
+.footer-subscription{
+    text-align: center;
+}
+
+//Copyright
+.copyright p{
+    padding: 2rem;
+    color: #fff;
+    font-family:'Barlow Semi Condensed', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  
+}
+
+
+
+//Form
+
+.form{
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    border: solid 2px rgb(201, 208, 205);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 1
+}
+.form-button{
+    width: 32%;
+    padding: 10px; 
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 2px rgb(201, 208, 205);
+    color: #fff;
+    background-color:rgb(109, 126, 120);
+    cursor:pointer;
+    text-transform: uppercase;
+   
+    &:hover{
+    
+    background-color: rgb(184, 182, 178);
+    color: #000;
+}
+}
+
+.validation h2{
+    color: #fff;
+    font-family:'Barlow Semi Condensed', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+}
+
+//BLOG
+.bloglist{
+    font-family:'Barlow Semi Condensed', Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+.bloglist li:hover{
+
+    color: rgb(25, 61, 49);
+   
+
+}
+}

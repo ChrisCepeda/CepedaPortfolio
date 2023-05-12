@@ -1,0 +1,134 @@
+.project-section{
+    width: 100%;
+}
+
+  .project-container{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+  
+  
+  @media screen and (max-width:767px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      background-color: rgba(255, 255, 255, 0.5);          
+      backdrop-filter: blur 5px;
+      margin:2px;
+      max-width: 100%;
+  
+  }
+  }
+  .project-container h1{
+      margin-left: 3px;
+      font-size: 4em;
+      font-weight: 500;
+      color: rgb(25, 61, 49);        
+      pointer-events: none;
+      text-align: center;
+  
+  }
+  
+  .project-card{
+  
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            /*display: inline-block;
+           /* overflow: hidden;*/
+            box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
+            background-color: rgba(255, 255, 255, 0.7);          
+            backdrop-filter: blur 5px;
+         
+          @media screen and (max-width:768px) {
+             max-width: 100%;
+             justify-self: center;
+              
+          }
+         
+      a{
+        text-decoration: none;
+        color:#000;
+      }
+      }
+      .project-card:hover{
+          box-shadow: 8px 17px 24px 0 rgba(0, 0, 0, 0.8);
+          transition: 0.3s;
+         
+        } 
+
+        .icons{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr auto;
+          justify-items: center;
+          
+          img{
+           width: 70%; 
+          }
+
+        }
+     
+        
+  
+      .project-wrapper{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          margin: 0 auto;
+          max-width: 100%;
+          width: 800px;
+      
+          grid-gap: 10px;
+      
+        
+          
+  
+          @media  screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            float: none;
+            margin:0;
+            width: 100%;
+             
+          }
+
+          
+          @media  screen and (max-width: 1024px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            float: none;
+            margin:0;
+            width: 100%;
+             
+          }
+      } 
+  
+  
+        .project-card h1 {
+          font-size: 9.5em;
+          font-weight: 900;
+          font-family: Georgia, 'Times New Roman', Times, serif;       
+          color: rgb(105, 60, 82);        
+          pointer-events: none;
+          text-align: center;
+          bottom: 20px;
+          opacity: 0.5;
+          margin-block: -14px;
+          
+        }
+  
+        .project-card h4 {
+         
+          font-size: 1.4em;
+          font-weight: 600;
+          font-family: 'Barlow Semi Condensed';       
+          color: rgb(25, 61, 49);        
+          pointer-events: none;
+          text-align: center;
+          margin-block: -4rem;
+        
+        }
+  
+    
+
+  
+        
+    
