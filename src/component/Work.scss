@@ -1,0 +1,167 @@
+.work{
+   width: 100%;
+   max-width: 100%;
+   background-color:#9ab8ba;
+
+  .work-container{
+    padding: 3rem;
+
+      h1{
+        color: rgb(25, 61, 49);        
+        pointer-events: none;
+        font-size: 2.1em;
+        
+        
+     }
+  }
+
+  .work-wrapper{
+          
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 1rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      margin:0;
+      max-width: 100%;
+      grid-gap: 20px;
+      padding: 0;
+    }  
+}
+
+  .work-cardtwo{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px 5px 80px 5px;
+    padding: 10px; 
+    box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
+    background: #ddf7f8;
+    background-image: url('../assets/images/doclounge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    h3{
+      color: #045256;
+      font-weight: 600;
+      margin:25px 1px;
+      background: rgba(248, 240, 240, 0.8);
+      padding: 10px;
+      border-bottom: 1.5px solid #045256;
+  
+    }
+   
+    p{
+      margin: 0;
+    }
+  
+  @media screen and (max-width:767px) {
+     max-width: 100%;
+     justify-self: center;
+    
+  }
+ }
+
+ .work-cardthree{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  max-width: 100%;
+  width: 200px;
+  height: 250px;
+  border-radius: 5px 5px 80px 5px;
+  padding: 10px; 
+  box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
+  background: #ddf7f8;
+  background-image: url('../assets/images/scrumproject.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  h3{
+    color: #045256;
+    font-weight: 600;
+    margin:25px 1px;
+    background: rgba(248, 240, 240, 0.8);
+    padding: 10px;
+    border-bottom: 1.5px solid #045256;
+
+  }
+  p{
+    margin: 0;
+  }
+
+@media screen and (max-width:768px) {
+   max-width: 100%;
+   justify-self: center;
+  
+}
+}
+.work-cardfour{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  max-width: 100%;
+  width: 200px;
+  height: 250px;
+  border-radius: 5px 5px 80px 5px;
+  padding: 10px; 
+  box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
+  background: #ddf7f8;
+  background-image: url('../assets/images/memorygame.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  h3{
+    color: #045256;
+    font-weight: 600;
+    margin:25px 1px;
+    background: rgba(248, 240, 240, 0.8);
+    padding: 10px;
+    border-bottom: 1.5px solid #045256;
+
+  }
+  h4{
+    color: #045256;
+    font-weight: 600;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+      }
+  p{
+    margin: 0;
+  }
+
+@media screen and (max-width:768px) {
+   max-width: 100%;
+   justify-self: center;
+  
+}
+}
+
+
+}
+
+
+.work-cardtwo:hover,
+.work-cardthree:hover,
+.work-cardfour:hover{
+  box-shadow: 8px 17px 24px 0 rgba(0, 0, 0, 1);
+  transition: 0.3s;
+
+ } 
+
+
+.tech-stack{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 9px 0 12px -24px;
+  justify-items: center;
+  padding: 0 7px 0 7px;
+
+  img{
+    width: 70%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+}
