@@ -25,7 +25,6 @@ export default function Modal() {
   return (
     <div className="modals">
       <button className='button-modal' onClick={() => setModalIsOpen(true)}>
-      <p>Read More </p>
       </button>
       <AnimatePresence>
         {modalIsOpen && (

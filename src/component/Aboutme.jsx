@@ -1,14 +1,13 @@
 import React from 'react'
 import './Aboutme.scss'
 import { motion } from 'framer-motion'
-import {Link} from 'react-router-dom'
 
 
 const About = () => {
   return (
 
     <div className='about-hero'>
-    <div className='about-container'>
+    <div className='aboutme-container'>
      <motion.div
      initial={{y:100, opacity: 0,}}
      animate={{y:0, opacity: 1,}}

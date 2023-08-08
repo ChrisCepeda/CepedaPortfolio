@@ -1,22 +1,22 @@
 import React from 'react'
 import './About.scss'
 import { motion } from 'framer-motion'
-import Aboutme from '../assets/images/christina.jpg'
+import computer from '../assets/images/intro.jpg'
 import { Link } from 'react-router-dom'
 
 
 const About = () => {
   return (
-
-    <div className='About-container'>
-       <motion.div className='image-me'
+    <div className='about'>
+    <div className='about-container'>
+       <motion.div className='image-computer'
          initial={{x:-20, opacity: 0,}}
          whileInView={{x:0, opacity: 1}}
          viewport={{ once: true }}
          transition={{delay:1, duration:0.5, ease:'easeIn'}}
         >
           
-        <img src={Aboutme} alt='christina'/>   
+        <img src={computer} alt='christina'/>   
          </motion.div>
 
     
@@ -26,23 +26,16 @@ const About = () => {
        viewport={{ once: true }}
         transition={{delay:1, duration:0.5, ease:'easeIn'}}>
      
-        <h1>ABOUT</h1> </motion.div>
+        <h1>ABOUT ME</h1> 
 
-        <motion.div className='about-text'
-        initial={{y:10, opacity: 0}}
-        whileInView={{ y:0,opacity: 1}}
-        viewport={{ once: true }}
-         transition={{delay:2, duration:0.8, ease:'easeIn'}}>
-        <p> I'M A STOCKHOLM BASED FRONTEND DEVELOPER WITH GREAT 
-          EXPERIENCE IN DESIGNING SOLUTIONS. WHETER IT IS DESIGNING SOLUTIONS IN CODE 
-          FOR CLIENTS, DESIGNING MATERIAL AND LESSONS FOR STUDENTS OR DESIGNING PATTERNS AND 
-          CLOTHES FOR CUSTOMERS,
-          THE MINDSET IN MY WORK EXPERIENCE HAS ALWAYS BEEN ENTREPRENEURIAL, CURIOS AND INNOVATIVE.
+        <p> I'm a Stockholm based frontend developer with great experience in designing solutions.
+          Whether is designing solutions in code for clients, designing material and lessons for students or
+          designing patterns and clothes for customers, the mindset in my work experience has always been
+          entrepreneurial, curious and innovative. 
           </p>
 
           <Link to="/About">
           <motion.button className='about-button'
-           
            whileHover={{ scale: 1.1 }}
            whileTap={{ scale: 0.9 }}
            >
@@ -50,6 +43,7 @@ const About = () => {
          
           </motion.div>
       
+          </div>
           </div>
   )
 };

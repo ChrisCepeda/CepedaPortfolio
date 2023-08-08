@@ -1,7 +1,7 @@
 .about-hero{
   width: 100%;
 }
-.about-container{
+.aboutme-container{
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-left: 1rem;
@@ -17,7 +17,7 @@
 
 }
 }
-.about-container h1{
+.aboutme-container h1{
     margin-left: 3px;
     font-size: 4em;
     font-weight: 900;
@@ -39,7 +39,7 @@
           /*display: inline-block;
          /* overflow: hidden;*/
           box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
-          background-color: rgba(255, 255, 255, 0.8);          
+          background-color:#ddf7f8;          
           backdrop-filter: blur 5px;
        
         @media screen and (max-width:768px) {

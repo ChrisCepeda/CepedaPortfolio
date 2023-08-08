@@ -1,6 +1,9 @@
+html{
+  scroll-behavior: smooth;
+}
 
 body {
-background-color:#fff;
+background-color:#f4f4f4;
 margin: 0 auto; 
 
 }

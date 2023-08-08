@@ -5,6 +5,7 @@
   .project-container{
       display: grid;
       grid-template-columns: 1fr 2fr;
+      padding: 3rem;
   
   
   @media screen and (max-width:767px) {
@@ -18,7 +19,6 @@
   }
   }
   .project-container h1{
-      margin-left: 3px;
       font-size: 4em;
       font-weight: 500;
       color: rgb(25, 61, 49);        
