@@ -28,8 +28,6 @@ export const MenuItem = ({ id, text}) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-
-
       <div className="text-placeholder" style={style}>
         <span className="text">{text}</span>
       </div>

@@ -35,7 +35,7 @@
     z-index: 1000;
   }
   .modal {
-    max-width: 500px;
+    max-width: 600px;
     width: 80%;
     background-color: #fff;
     border-radius: 5px;
@@ -75,11 +75,10 @@
 
 
   .tools-used{
-    max-width: 80%;
+    max-width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  
-    padding: 1rem;
+    padding: 10px;
     
     
     img {
@@ -90,10 +89,10 @@
   }
 
   .play{
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   .modal-footer {
-    padding: 1rem;
+    padding: .5rem;
     text-align: right;
     z-index:1000;
   }

@@ -1,6 +1,8 @@
-import * as React from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./Items";
+import { Link } from "react-router-dom";
+
 
 const variants = {
   open: {
@@ -11,17 +13,27 @@ const variants = {
   }
 };
 
+
 const Items = [
-  { id: "0", text: "PROJECTS", to:'/Projects'},
-  { id: "1", text: "BLOG"},
-  { id: "2", text: "ABOUT" },
-  { id: "3", text: "HOME"},
+  { id: "0", text: "PROJECTS", to:"/Projects"},
+  { id: "1", text: "BLOG", to: "/Blog"},
+  { id: "2", text: "ABOUT", to:"/About"},
+  { id: "3", text: "HOME", to: "/Home"},
 ];
 
-export const Navigation = () => (
+
+export const Navigation = ({ toggleSidebar }) => ( 
+ 
   <motion.ul variants={variants}>
     {Items.map((item) => (
-      <MenuItem id={item.id} key={item.id} text={item.text} />
-    ))}
+      <div key={item.id}>
+    
+      <Link to={`${item.to}`} onClick={toggleSidebar}>
+      <MenuItem id={item.id} key={item.id} text={item.text} to={item.to}/>
+      </Link>
+      </div>
+
+       ))}
+ 
   </motion.ul>
 );

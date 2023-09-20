@@ -7,7 +7,6 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1.3rem;
     padding: 2rem  0 0 2rem;
 
 @media screen and (max-width:767px) {
@@ -42,7 +41,7 @@
 .container h2{
   margin-left: 5px;
   color: #045256;  
-  font-size:1.3em;    
+  font-size:1em;    
   font-weight: 500; 
 
 }
@@ -157,8 +156,16 @@ h4 {
       
       }
     }
+  
   }
 
+  .contact-field{
+    width:220px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px; 
+    padding: 10px;
+  }
 
 
 
