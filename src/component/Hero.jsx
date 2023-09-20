@@ -13,15 +13,15 @@ const Hero = () => {
 
       <div className='left'>
        <h1 className="animate__animated animate__fadeInUp">HELLO!</h1>
-       <h2 className="animate__animated animate__fadeInUp animate__delay-2s"> 
-        I'm Christina, a frontend developer, educater and designer. <br></br>I have gathered a 
+       <h2 className="animate__animated animate__fadeInUp animate__delay-1s"> 
+        I'm Christina, a frontend developer, educater and designer. I have gathered a 
         wealth of experience and skills in these fields. <br></br>Contact me if you are interested in any 
         collaboration! 
         
        </h2>
       
       <div className='contact-field'>
-      <div className="animate__animated animate__fadeInUp animate__delay-3s">
+      <div className="animate__animated animate__fadeInUp animate__delay-2s">
       <a href="mailto:hello@cepeda.se">
           <motion.button className='about-button'
            whileHover={{ scale: 1.1 }}
@@ -29,7 +29,7 @@ const Hero = () => {
            >
            <p>CONTACT ME</p>  </motion.button> </a></div>
 
-           <div className="animate__animated animate__fadeInUp animate__delay-3s">
+           <div className="animate__animated animate__fadeInUp animate__delay-2s">
 
           <Link to="/About">
           <motion.button className='about-button'

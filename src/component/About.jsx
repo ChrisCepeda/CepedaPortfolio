@@ -39,7 +39,7 @@ const About = () => {
            whileHover={{ scale: 1.1 }}
            whileTap={{ scale: 0.9 }}
            >
-           <p>Read More</p>  </motion.button> </Link>
+           <p>READ MORE</p>  </motion.button> </Link>
          
           </motion.div>
       
