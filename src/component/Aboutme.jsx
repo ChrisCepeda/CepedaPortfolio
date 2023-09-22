@@ -1,47 +1,71 @@
 import React from 'react'
 import './Aboutme.scss'
 import { motion } from 'framer-motion'
+import ux from '../assets/images/ux-design.png'
+import ui from '../assets/images/design.png'
+import figma from '../assets/images/figma.png'
+import mongodb from '../assets/images/mongodb.png'
+import css from '../assets/images/css2.png'
+import react from '../assets/images/react.png'
+import javascript from '../assets/images/js.png'
+import html from '../assets/images/html.png'
+ 
 
 
 const About = () => {
   return (
 
     <div className='about-hero'>
-    <div className='aboutme-container'>
-     <motion.div
-     initial={{y:100, opacity: 0,}}
-     animate={{y:0, opacity: 1,}}
-     transition={{duration:0.5, ease:'easeIn'}}
-     
-     ><h1>ABOUT <br></br>CHRISTINA</h1>
-     </motion.div> 
-    </div>
 
-    
-    <div className='about-wrapper'>
+          <div className='aboutme-container'>
+          <motion.div
+          initial={{y:100, opacity: 0,}}
+          animate={{y:0, opacity: 1,}}
+          transition={{duration:0.5, ease:'easeIn'}}
           
-          <motion.div className='about-cardone'
+          ><h1>ABOUT CHRISTINA</h1>
+          </motion.div> 
+          </div>
+
+
+          <motion.div className='about-frontend'
             initial={{y:100, opacity: 0,}}
             animate={{y:0, opacity:1}}
             transition={{delay:1.0, duration:0.8, ease:'easeIn'}}>
-          
+      
+          <div className='animate__animated animate__fadeInUp animate__delay-2s intro-cardone'>
             <h1>01</h1>
             <h4>FRONTEND
-            DEVELOPER</h4>
-            <p>#1 📂 EXPERIENCE<br />
-            I'm currently doing my internship as a Frontend Developer 
-              at Lemontree, a Stockholm based IT-company with services in DevOps, TestOps, Development and Life Science. <br /> <br />
+            DEVELOPMENT</h4>
+         </div>
+    
+         <div className='animate__animated animate__fadeInUp animate__delay-3s frontend-text'>
+
+            <p>
+              I am constantly buildning applications with both front-and backend techstack. 
+              I have tons of experience collaborating in teams practising 
+              an agile workflow through Kanban and Scrum method. 
+              And implementing to the projects a design thinking through 
+              user-Centered design (UX) and layout design (UI).<br /> <br />
               
-              #2 🦾 SKILLS <br />
-              Constantly buildning applications with both front-and backend techstack. Collaborating in teams practising 
-              an agile workflow through Kanban and Scrum methods. And implementing to the projects a design thinking through 
-              User-Centerd design (UX) and layout design (UI).<br /> <br />
+
+              🎓 QUALIFICATIONS <br />
+              March 2023 Diploma in Frontend Development from Hyper Island.<br /> <br />
+
+              🦾 TECHNOLOGY STACK<br/>      </p>
+
+             <div className='tech-stack'>
+              <img src={html} alt='html'/>
+              <img src={css} alt='css'/>
+              <img src={javascript} alt='javascript'/>
+               <img src={react} alt='React'/>
+               <img src={mongodb} alt='Mongodb'/>
+                <img src={ui} alt='ui'/>
+               <img src={ux} alt='ux'/>
+               <img src={figma} alt='figma'/>
+             </div>
               
-
-              #3 🎓 QUALIFICATIONS <br />
-              March 2023 Diploma in Frontend Development from Hyper Island.</p><br /> <br />
-
-
+           </div>
           </motion.div>
 
           <motion.div className='about-cardtwo'
@@ -91,13 +115,10 @@ const About = () => {
 
           </motion.div>
 
-          
+          </div>
         
-        </div>
-      </div>
-          
 
-
+      
    
   )
 }
