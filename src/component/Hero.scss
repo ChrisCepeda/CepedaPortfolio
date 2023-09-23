@@ -7,13 +7,12 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1.3rem;
     padding: 2rem  0 0 2rem;
 
 @media screen and (max-width:767px) {
     grid-template-columns: 1fr;
     justify-items: center;
-    margin:2px;
+    margin:5px;
     max-width: 100%;
     padding: 20px;
 }
@@ -29,8 +28,6 @@
 }
 .container h1{
     margin-left: 3px;
-    font-size: 3em;
-    font-weight: 600;
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: #045256;        
     pointer-events: none;
@@ -42,7 +39,7 @@
 .container h2{
   margin-left: 5px;
   color: #045256;  
-  font-size:1.3em;    
+  font-size:1em;    
   font-weight: 500; 
 
 }
@@ -143,22 +140,26 @@ h4 {
      transition: 0.4s;
     } 
 
-  .right{
+ 
+  
+  .left{
+    width: 400px;
 
-    img{
-      width: 90%; 
-      border-bottom: 3px solid rgb(25, 61, 49);
-      border-right: 3px solid rgb(25, 61, 49);
-      /*box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);        
-      border-radius: 5px 5px 80px 5px;*/
-      
-      @media screen and (min-width: 845px)and (max-width:1024px) {
-        display:none;
-      
-      }
+    @media  screen and (max-width: 767px) {
+     
+      width: 100%; 
+      justify-items: center;
     }
   }
 
+  .contact-field{
+    width:220px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px; 
+    padding: 6px;
+  
+  }
 
 
 

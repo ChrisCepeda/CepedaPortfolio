@@ -14,13 +14,13 @@ const sidebar = {
     }
   }),
   closed: {
-   clipPath: "circle(47px at 300px 29px)",
+   clipPath: "circle(60px at 366px 29px)",
    transition: {
      delay: 0.5,
      type: "spring",
      stiffness: 400,
      damping: 40
-    }
+    } 
   }
 };
 
@@ -35,7 +35,7 @@ export default function App() {
         custom="100%"
       >
         <motion.div className="navbar" variants={sidebar} />
-        <Navigation />
+        <Navigation toggleSidebar={toggleOpen} />
         <MenuToggle toggle={() => toggleOpen()} />
       </motion.nav>
     

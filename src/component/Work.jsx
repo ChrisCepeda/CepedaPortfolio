@@ -27,7 +27,7 @@ const Work = () => {
             viewport={{ once: true }}
             transition={{duration:0.5, ease:'easeIn'}}
             >
-              <h1>RECENT PROJECTS</h1>
+              <h1>PROJECTS</h1>
             </motion.div> 
 
       <div className='work-wrapper'>
