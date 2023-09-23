@@ -14,12 +14,14 @@ h1{
   font-weight: 500;
   font-size: 1.9em;
   letter-spacing: 2px;
+  color: #045256;
 }
 
 h2{
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 1.6em;
+  color: #045256;
 
 }
 
@@ -35,7 +37,7 @@ h3{
 p{
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 a{
