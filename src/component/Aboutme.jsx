@@ -33,13 +33,13 @@ const About = () => {
             animate={{y:0, opacity:1}}
             transition={{delay:1.0, duration:0.8, ease:'easeIn'}}>
       
-          <div className='animate__animated animate__fadeInUp animate__delay-2s intro-cardone'>
+          <div className='intro-cardone'>
             <h1>01</h1>
             <h4>FRONTEND
             DEVELOPMENT</h4>
          </div>
     
-         <div className='animate__animated animate__fadeInUp animate__delay-3s frontend-text'>
+         <div className='frontend-text'>
 
             <p>
               I am constantly buildning applications with both front-and backend techstack. 
@@ -50,7 +50,7 @@ const About = () => {
               
 
               🎓 QUALIFICATIONS <br />
-              March 2023 Diploma in Frontend Development from Hyper Island.<br /> <br />
+              March 2023 Diploma in Frontend Development / Hyper Island.<br /> <br />
 
               🦾 TECHNOLOGY STACK<br/>      </p>
 
@@ -68,58 +68,67 @@ const About = () => {
            </div>
           </motion.div>
 
-          <motion.div className='about-cardtwo'
+          <motion.div className='about-frontend'
             initial={{y:100, opacity: 0,}}
-            animate={{y:0, opacity:1}}
-            transition={{delay:1.5, duration:0.8, ease:'easeIn'}}>
-          
+            transition={{delay:1.0, duration:0.8, ease:'easeIn'}}
+            whileInView={{y:0, opacity: 1}}
+            viewport={{ once: true }}>
+      
+          <div className='intro-cardone'>
             <h1>02</h1>
             <h4>DESIGN</h4>
-            <p>#1 📂 EXPERIENCE <br />
-               During several years running a cloths and design business. 
-               Collaborating with tailors and pattern makers in India/Rajastan and Indonesia/Bali, creating clothes collections.<br /> <br />
-               
-              #2 🦾 SKILLS <br />
-              Textile design: Sewing techniques, patternmaking and fabrics.<br />
-              Import and export: Coordinating with shipping agents for exporting and importing goods.<br />
-              Retail: Sales and customer service.<br /> <br />
+         </div>
+    
+         <div className='frontend-text'>
 
-              #3 🎓 QUALIFICATIONS <br />
-              Design in Profession and Theory course from Borås Textilhögskola. <br />
-              Pattern making course from Malmö Folkhögskola </p><br /> 
+            <p>
+               During several years I ran my own business in clothes and textile collections
+               collaborating with tailors and pattern makers in India/Rajastan and Indonesia/Bali, 
+               creating clothes collections.<br /> <br />
+              
+              🎓 QUALIFICATIONS <br />
+              Design in Profession and Theory course / Borås Textilhögskola. <br />
+              Pattern making course / Malmö Folkhögskola <br /> <br />
 
-
+              🦾 SKILLS <br />
+              #textile design #sewing techniques #patternmaking #fabrics
+              #import and export of goods
+              #retail #sales #customer service<br />  </p>
+              
+           </div>
           </motion.div>
 
-          <motion.div className='about-cardthree'
+          <motion.div className='about-frontend'
             initial={{y:100, opacity: 0,}}
-            animate={{y:0, opacity:1}}
-            transition={{delay:2.0, duration:0.8, ease:'easeIn'}}>
-          
-            <h1>03</h1>
-            <h4>EDUCATER</h4>
-            <p>#1 📂 EXPERIENCE<br />
-                I worked as a teacher for almost ten years, coordinating lessons, evaluation and assessment. 
-                Also designing lessons for specific needs and preferences. <br /> <br />
+            transition={{delay:1.0, duration:0.8, ease:'easeIn'}}
+            whileInView={{y:0, opacity: 1}}
+            viewport={{ once: true }}>
+      
+          <div className='intro-cardone'>
+            <h1>02</h1>
+            <h4>DESIGN</h4>
+         </div>
+    
+         <div className='frontend-text'>
+
+            <p>
+               During several years I ran my own business in clothes and textile collections
+               collaborating with tailors and pattern makers in India/Rajastan and Indonesia/Bali, 
+               creating clothes collections.<br /> <br />
               
-              #2 🦾 SKILLS <br />
-              Continously developing pedagogic and didactic competence of teaching, teaching techniques, 
-              assessment, groupdynamics and feedback.<br /> <br />
+              🎓 QUALIFICATIONS <br />
+              Design in Profession and Theory course / Borås Textilhögskola. <br />
+              Pattern making course / Malmö Folkhögskola <br /> <br />
+
+              🦾 SKILLS <br />
+              #textile design #sewing techniques #patternmaking #fabrics
+              #import and export of goods
+              #retail #sales #customer service<br />  </p>
               
-
-              #3 🎓 <b> QUALIFICATIONS </b> <br />
-              Bachelor of Education from Stockholms Universitet.<br />
-              Bachelor of Arts Spanish from Uppsala Universitet. <br/ > 
-              </p>
-
-
+           </div>
           </motion.div>
 
-          </div>
-        
-
-      
-   
+    </div>
   )
 }
 
