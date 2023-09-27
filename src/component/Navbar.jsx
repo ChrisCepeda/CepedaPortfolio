@@ -2,7 +2,7 @@
 import './Navbar.scss'
 import { FaHome } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
-import SideNav from '../SideNav/SideNav'
+import SideNav from './SideNav/SideNav.js'
 
 const Navbar = () => {
 
