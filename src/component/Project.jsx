@@ -1,7 +1,9 @@
 import React from 'react'
 import './Project.scss'
-import {Link} from 'react-router-dom'
 import { motion } from 'framer-motion'
+import Modaltwo from './Modaltwo'
+import Modalthree from './Modalthree'
+import Modalfour from './Modalfour'
 import ux from '../assets/images/ux-design.png'
 import ui from '../assets/images/design.png'
 import figma from '../assets/images/figma.png'
@@ -17,160 +19,123 @@ import php from '../assets/images/php.png'
 import api from '../assets/images/api.png'
 
 
+const Project = () => {
 
 
-
-
-
-const Hero = () => {
   return (
-    <div className='project-section'>
-      <div className='project-container'>
-      
-       <motion.div
-          initial={{y:100, opacity: 0,}}
-          animate={{y:0, opacity: 1,}}
-          transition={{duration:0.5, ease:'easeIn'}}
-          >
-          <h1>PROJECTS</h1>
-     </motion.div> 
-    </div>
+    <div className='project'>
 
+      <motion.div
+      initial={{y:100, opacity: 0,}}
+      whileInView={{y:0, opacity: 1,}}
+      viewport={{ once: true }}
+      transition={{duration:0.5, ease:'easeIn'}}
+      >
+      <h1>PROJECTS</h1>
+      </motion.div>
 
-    <div className='project-wrapper'>
+      <div className='project-wrapper'>
 
-    
-          <motion.div className='project-card'
-               initial={{y:0, opacity: 0,}}
-               animate={{y:0, opacity:1}}
-               whileInView={{x:0, opacity: 1}}
-               viewport={{ once: true }}
-               transition={{delay:1, duration:0.5, ease:'easeIn'}}
-               >
+        <motion.div className='work-cardtwo'
+          initial={{x:20, opacity: 0}}
+          whileInView={{x:0, opacity:1}}
+          viewport={{ once: true }}
+          transition={{delay:1, duration:.5, ease:'easeIn'}}>
+          
+          < Modaltwo />
+          <h3>LANDING PAGE</h3>
+          <p> A landing page prototype designed with Figma and collaborated in Miro. </p>
         
-                  <h1>01</h1>
-                  <h4>LEMONTREE WEBSITE <br />
-                      </h4> <br />
-                      <p style={{paddingTop: '3rem'}}>Modernizing and updating Lemontrees website and keep it maintainable
-                      through Wordpress.   </p>
-              
-            
-                  <div className='icons'>
-                  <img src={wordpress} alt='wordpress'/>
-                  <img src={xampp} alt='xampp'/>
-                  <img src={php} alt='PHP' />
-                  <img src={figma} alt='figma' />
-                  <p>Wordpress</p>
-                  <p>XAMPP</p>
-                  <p>PHP</p>
-                  <p>FIGMA</p>
+          <div className='tech-stack'>
+          <img src={ui} alt='ui'/>
+          <img src={ux} alt='ux'/>
+          <img src={figma} alt='figma'/>
 
-                  </div>
-
-          </motion.div>
-
-          <motion.div className='project-card'
-              initial={{y:0, opacity: 0,}}
-              animate={{y:0, opacity:1}}
-              whileInView={{x:0, opacity: 1}}
-              viewport={{ once: true }}
-              transition={{delay:1.5, duration:0.8, ease:'easeIn'}}>
-  
-                <h1>02</h1>
-                <h4>MEMORY GAME<br /><br />
-                </h4>
-                <p style={{paddingTop: '3rem'}}>Just a fun game made from a great team work!
-                Using Date and Localstorage as techniques to save score and time.
-                </p>
-                <div className="icons">
-                <img src={html} alt='html'/>
-                    <img src={css} alt='css'/>
-                    <img src={javascript} alt='javascript'/>
-                    <img src={figma} alt='figma' />
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JS</p>
-                    <p>FIGMA</p>
-               </div>
+          <p>UI</p>
+          <p>UX</p>
+          <p>Figma</p>
+        </div>
         </motion.div>
 
-        <motion.div className='project-card'
-              initial={{y:0, opacity: 0,}}
-              animate={{y:0, opacity:1}}
-              transition={{delay:2, duration:0.8, ease:'easeIn'}}
-              whileInView={{x:0, opacity: 1}}
-              viewport={{ once: true }}>
-               <h1>03</h1>
-             <h4>E-COMMERCE WEBSITE</h4> <br />
-               <br />
-              <p style={{paddingTop: '3rem'}}>Collaborating in an Agile workflow and through the Scrum method 
-              developing a product in sprints.   </p>
-                  <div className='icons'>
-                  <img src={react} alt='react'/>
-                  <img src={mongodb} alt='mongodb'/>
-                  <img src={node} alt='node'/>
-                  <img src={figma} alt='figma' />
-                  <p>REACT</p>
-                  <p>MongoDB</p>
-                  <p>NODE</p>
-                  <p>FIGMA</p>
-                  </div>
-          </motion.div>
 
-          <motion.div className='project-card'
-                  initial={{y:0, opacity: 0,}}
-                  animate={{y:0, opacity:1}}
-                  transition={{delay:2.5, duration:0.8, ease:'easeIn'}}
-                  whileInView={{y:0, opacity: 1}}
-                  viewport={{ once: true }}>
-                               
-                  <h1>04</h1>
-                  <h4>MOVIE APP</h4> <br /><br />
-                  
-                  <p style={{paddingTop: '3rem'}}>Building a simple Movie Application with React and API.    </p>
-                  <div className='icons'>
-                  <img src={react} alt='react'/>
-                  <img src={api} alt='api'/>
-                  <img src={node} alt='node'/>
-                  <p>React</p>
-                  <p>API</p>
-                  <p>Node</p>
-                  </div>
-             
-          </motion.div>
-          <motion.div className='project-card'
-               initial={{y:0, opacity: 0,}}
-               transition={{ delay:0.5, duration:0.8, ease:'easeIn'}}
-               whileInView={{y:0, opacity: 1}}
-               viewport={{ once: true }}
-             
-               >
+
+        <motion.div className='work-cardthree'
+          initial={{x:20, opacity: 0}}
+          whileInView={{x:0, opacity:1}}
+          viewport={{ once: true }}
+          transition={{delay:1.5, duration:.5, ease:'easeIn'}}
+         
+          >
+          
+          < Modalthree />
+          <h3>E-COMMERCE WEBSITE</h3>
+          <p> Through an 
+            Agile workflow and the SCRUM method construct an eCommerce site. </p>
         
-                  <h1>01</h1>
-                  <h4>WEBSITE PROTOTYPE <br />
-                      DOCLOUNGE B2B </h4> <br />
-                      <p style={{paddingTop: '3rem'}}>A team collaboration with the goal to modernize and develop a coherent structure 
-                      and great user experience to the nordic film documentaries website.   </p>
-                        <div className='icons'>
-                        <img src={ui} alt='ui'/>
-                        <img src={ux} alt='ux'/>
-                        <img src={figma} alt='figma' />
-                        <p>UI</p>
-                        <p>UX</p>
-                        <p>FIGMA</p>
+          <div className='tech-stack'>
+        
+          <img src={ux} alt='ux'/>
+          <img src={react} alt='React'/>
+          <img src={mongodb} alt='Mongodb'/>
 
-                    </div>
-
-          </motion.div>
+          <p>UX</p>
+          <p>React</p>
+          <p>MongoDB</p>
           
         </div>
+        </motion.div>
+
+        <motion.div className='work-cardfour'
+          initial={{x:20, opacity: 0}}
+          whileInView={{x:0, opacity:1}}
+          viewport={{ once: true }}
+          transition={{delay:2, duration:.5, ease:'easeIn'}}
+         
+         >
+          
+          < Modalfour />
+          <h3>MEMORY GAME</h3>
+          <p> The cutest memory game ever and great collaboration contributing code with GIT </p>
+        
+          <div className='tech-stack'>
+          
+          <img src={html} alt='html'/>
+          <img src={css} alt='css'/>
+          <img src={javascript} alt='javascript'/>
+
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JS</p>
         </div>
+        </motion.div>
+
+        <motion.div className='work-cardfive'
+          initial={{x:20, opacity: 0}}
+          whileInView={{x:0, opacity:1}}
+          viewport={{ once: true }}
+          transition={{delay:2.5, duration:.5, ease:'easeIn'}}
+         >
+          
+          <h3>LANDING PAGE </h3>
+          <p> The cutest memory game ever and great collaboration contributing code with GIT </p>
+        
+          <div className='tech-stack'>
+          
+          <img src={html} alt='html'/>
+          <img src={css} alt='css'/>
+          <img src={javascript} alt='javascript'/>
+
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JS</p>
+        </div>
+        </motion.div>
 
 
-
-  
+       </div>
+    </div>
    
   )
 }
 
-export default Hero 
+export default Project 
