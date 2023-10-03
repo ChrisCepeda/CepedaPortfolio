@@ -5,6 +5,7 @@ import ui from '../assets/images/design.png'
 import figma from '../assets/images/figma.png'
 import miro from '../assets/images/miro-2.svg'
 import ux from '../assets/images/ux-design.png'
+import doclounge from '../assets/DocLounge.pdf'
 
 
 export default function Modal() {
@@ -52,19 +53,17 @@ export default function Modal() {
               </div>
               <div className="modal-content">
               <h4> 🗂️ PROJECT OVERVIEW</h4>
-                <p>In this project the team was assigned to do a real B2B product. The client 
+                <p>In this project the team was assigned to do a B2B product. The client 
                   Doc Lounge specialises in documentary film distribution of new Nordic and 
-                  international documentaries through events and outreach. They continuously work with development 
-                  projects to innovate documentary distribution and the film screening experience.
-                  The project was developed through the User Centered Design process 
-                  with four phases: discover, define, develop and deliver. This iterative process 
-                  made us discover and understand the context of use, then define the user requirements, 
-                  develop solutions and finally deliver against the requirements. 
+                  international documentaries through events and outreach. Their current website lacked 
+                  an appealing UI design and was hard to navigate, resulting into a non friendely user experience. 
+                  My team had to create an responsive About and Contact page that could attract the B2B market.
                 </p>
                 <h4>💻 PROJECT PROCESS</h4>
                 <p>
-                • Empathize - Based on the product we wanted to sell, we did a researched and observed 
-                potential users to gain insights into their preferences, behavior, and challenges related to online shopping.<br></br>
+                • Empathize - Based on the product we wanted to create, we researched and observed 
+                potential users to gain insights into their preferences, behavior, and challenges 
+                related to the existing website.<br></br>
                 • Define - Organization of the information and state users needs and problems. The 
                 team created various personas to recognize the diferent needs of different people.<br></br>
                 • Ideation - Brainstorming and generation of ideas. <br></br> 
@@ -83,8 +82,8 @@ export default function Modal() {
                 </div>
                 
                 <div className='play'>
-                <a href="https://tranquil-toffee-3f7e41.netlify.app/" rel="noreferrer" target="_blank">
-                VISIT GITHUB
+                <a href={doclounge}  target="_blank">
+                OPEN PDF
                 </a>
                 </div>
               </div>

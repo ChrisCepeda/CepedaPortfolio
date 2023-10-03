@@ -26,12 +26,17 @@ const About = () => {
        viewport={{ once: true }}
         transition={{delay:1, duration:0.5, ease:'easeIn'}}>
      
-        <h1>ABOUT ME</h1> 
+        <h1>Let's Collaborate!</h1> 
 
-        <p> I'm a Stockholm based frontend developer with great experience in designing solutions.
-          Whether is designing solutions in code for clients, designing material and lessons for students or
-          designing patterns and clothes for customers, the mindset in my work experience has always been
-          entrepreneurial, curious and innovative. 
+        <p> Let's Collaborate
+
+            If you're looking for a passionate frontend developer who can infuse creativity into 
+            your web projects, I would love to collaborate with you. <br></br>
+            Whether you have a specific project in mind or want to explore new ideas, 
+            I'm here to bring your vision to life.
+
+            Thank you for visiting my portfolio, and I look forward to 
+            connecting with you to create beautiful and functional web experiences together.
           </p>
 
           <Link to="/About">
