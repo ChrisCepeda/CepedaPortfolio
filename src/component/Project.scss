@@ -10,6 +10,7 @@
       width: 100%;
       margin-top: 2rem;
       display: grid;
+      grid-gap: 20px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       
       @media screen and (max-width: 1024px) {
@@ -26,7 +27,44 @@
         padding: 0;
       }  
   }
+  .work-cardone{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px 5px 80px 5px;
+    padding: 10px; 
+    box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
+    background: #ddf7f8;
+    background-image: url('../assets/images/byteberry.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   
+    h3{
+      color: #045256;
+      font-weight: 600;
+      margin:25px 1px;
+      background: rgba(248, 240, 240, 0.8);
+      padding: 10px;
+      border-bottom: 1.5px solid #045256;
+  
+    }
+    h4{
+      color: #045256;
+      font-weight: 600;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+        }
+    p{
+      margin: 0;
+    }
+  
+  @media screen and (max-width:768px) {
+     max-width: 100%;
+     justify-self: center;
+    
+  }
+  }
     .work-cardtwo{
       display: grid;
       grid-template-rows: 1fr 1fr;
@@ -175,10 +213,11 @@
   
   }
   
-  
+  .work-cardone:hover,
   .work-cardtwo:hover,
   .work-cardthree:hover,
-  .work-cardfour:hover{
+  .work-cardfour:hover,
+  .work-cardfive:hover{
     box-shadow: 8px 17px 24px 0 rgba(0, 0, 0, 1);
     transition: 0.3s;
   

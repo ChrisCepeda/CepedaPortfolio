@@ -1,9 +1,12 @@
 import React from 'react'
 import './Project.scss'
 import { motion } from 'framer-motion'
+import Modalone from './Modalone'
 import Modaltwo from './Modaltwo'
 import Modalthree from './Modalthree'
 import Modalfour from './Modalfour'
+import Modalfive from './Modalfive'
+
 import ux from '../assets/images/ux-design.png'
 import ui from '../assets/images/design.png'
 import figma from '../assets/images/figma.png'
@@ -35,6 +38,27 @@ const Project = () => {
       </motion.div>
 
       <div className='project-wrapper'>
+
+      <motion.div className='work-cardone'
+          initial={{x:20, opacity: 0}}
+          whileInView={{x:0, opacity:1}}
+          viewport={{ once: true }}
+          transition={{delay:2.5, duration:.5, ease:'easeIn'}}
+         >
+
+        < Modalone/>
+          
+          <h3>LANDING PAGE </h3>
+          <p> The cutest memory game ever and great collaboration contributing code with GIT </p>
+        
+          <div className='tech-stack'>
+
+          <img src={ui} alt='ui'/>
+          <img src={ux} alt='ux'/>
+          <img src={figma} alt='figma'/>
+        </div>
+        </motion.div>
+
 
         <motion.div className='work-cardtwo'
           initial={{x:20, opacity: 0}}
@@ -115,6 +139,8 @@ const Project = () => {
           viewport={{ once: true }}
           transition={{delay:2.5, duration:.5, ease:'easeIn'}}
          >
+
+        < Modalfive/>
           
           <h3>LANDING PAGE </h3>
           <p> The cutest memory game ever and great collaboration contributing code with GIT </p>
