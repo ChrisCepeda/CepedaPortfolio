@@ -59,7 +59,7 @@ export default function Modal() {
                   an appealing UI design and was hard to navigate, resulting into a non friendely user experience. 
                   My team had to create an responsive About and Contact page that could attract the B2B market.
                 </p>
-                <h4>💻 PROJECT PROCESS</h4>
+                <h4>🔩 PROJECT PROCESS</h4>
                 <p>
                 • Empathize - Based on the product we wanted to create, we researched and observed 
                 potential users to gain insights into their preferences, behavior, and challenges 

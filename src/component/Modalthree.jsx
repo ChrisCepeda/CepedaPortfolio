@@ -55,7 +55,7 @@ export default function Modal() {
               </div>
 
               <div className="modal-content">
-                <h4> 🗂️ PROJECT OVERVIEW</h4>
+                <h4> 🗂️PROJECT OVERVIEW</h4>
                 <p>This project aims to develop a E-commerce website an Agile methodology. 
                   The primary focus is to ensure an efficent collaboration by 
                   the adoption of the Scrum framework- the frequent feedback and continuous improvement throughout the development 
@@ -64,7 +64,7 @@ export default function Modal() {
                   The iterative and incremental development process will ensure that the project stays on track and 
                   fosters effective communication.
                 </p>
-                <h4>💻 PROJECT PROCESS</h4>
+                <h4>🔩PROJECT PROCESS</h4>
                 <p>
                 • Empathize - Based on the product we wanted to sell, we did a researched and observed 
                 potential users to gain insights into their preferences, behavior, and challenges related to online shopping.<br></br>
@@ -75,7 +75,7 @@ export default function Modal() {
                 • Development - Code, debug and test </p>
                 
                 
-                <h4>⚙️ TECHNOLOGY STACK</h4>
+                <h4>⚙️TECHNOLOGY STACK</h4>
                 <div className="tools-used">
                 <img src={miro} alt='miro'/>
                 <img src={figma} alt='figma'/>

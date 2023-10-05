@@ -53,6 +53,7 @@ export default function Modal() {
               </div>
 
               <div className="modal-content">
+                <h4>🗂️PROJECT OVERVIEW</h4>
                 <h4>PROJECT OVERVIEW</h4>
                 <p> Create a modern and visually engaging landing page for an IT company using Figma. 
                    The landing page showcase the company's expertise, services, and portfolio, 
@@ -60,7 +61,7 @@ export default function Modal() {
                    the company. The design will feature a clean and professional layout, 
                    incorporating the company's branding elements. 
                 </p>
-                <h4>PROJECT PROCESS</h4>
+                <h4>🔩PROJECT PROCESS</h4>
                 <p>     • Empathize - Researched how and what the company staff felt about the current website.
                         • Define - Stated needs and problems of the current website.
                         • Ideation - Brainstormed and created ideas of new layout and design. 
@@ -69,7 +70,7 @@ export default function Modal() {
                 
                 The Figma design phase will involve wireframing, prototyping, and iterating on visual elements to create a user-centric landing page.
                 
-                <h4>TECHNOLOGY STACK</h4>
+                <h4>⚙️TECHNOLOGY STACK</h4>
                 <div className="tools-used">
                 <img src={ui} alt='ui'/>
                 <img src={ux} alt='ux'/>

@@ -28,12 +28,11 @@ const About = () => {
      
         <h1>Let's Collaborate!</h1> 
 
-        <p> Let's Collaborate
-
+        <p>
             If you're looking for a passionate frontend developer who can infuse creativity into 
             your web projects, I would love to collaborate with you. <br></br>
             Whether you have a specific project in mind or want to explore new ideas, 
-            I'm here to bring your vision to life.
+            I'm here to bring your vision to life.<br></br>
 
             Thank you for visiting my portfolio, and I look forward to 
             connecting with you to create beautiful and functional web experiences together.
