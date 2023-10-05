@@ -43,20 +43,20 @@ const Project = () => {
           initial={{x:20, opacity: 0}}
           whileInView={{x:0, opacity:1}}
           viewport={{ once: true }}
-          transition={{delay:2.5, duration:.5, ease:'easeIn'}}
-         >
-
-        < Modalone/>
-          
-          <h3>LANDING PAGE </h3>
-          <p> The cutest memory game ever and great collaboration contributing code with GIT </p>
+          transition={{delay:1, duration:.5, ease:'easeIn'}}>
+           < Modalone/>
+          <h3>ECO TECH SOLUTIONS </h3>
+          <p> With a unintuitive navigation and outdated design, this IT company needed
+            a UX boost.  </p>
         
           <div className='tech-stack'>
-
-          <img src={ui} alt='ui'/>
-          <img src={ux} alt='ux'/>
-          <img src={figma} alt='figma'/>
-        </div>
+              <img src={ui} alt='ui'/>
+              <img src={ux} alt='ux'/>
+              <img src={figma} alt='figma'/>
+              <p>UI</p>
+              <p>UX</p>
+              <p>Figma</p>
+          </div>
         </motion.div>
 
 
@@ -64,10 +64,10 @@ const Project = () => {
           initial={{x:20, opacity: 0}}
           whileInView={{x:0, opacity:1}}
           viewport={{ once: true }}
-          transition={{delay:1, duration:.5, ease:'easeIn'}}>
+          transition={{delay:1.5, duration:.5, ease:'easeIn'}}>
           
           < Modaltwo />
-          <h3>LANDING PAGE</h3>
+          <h3>DOC LOUNGE B2B</h3>
           <p> A landing page prototype designed with Figma and collaborated in Miro. </p>
         
           <div className='tech-stack'>
@@ -87,7 +87,7 @@ const Project = () => {
           initial={{x:20, opacity: 0}}
           whileInView={{x:0, opacity:1}}
           viewport={{ once: true }}
-          transition={{delay:1.5, duration:.5, ease:'easeIn'}}
+          transition={{delay:2, duration:.5, ease:'easeIn'}}
          
           >
           
@@ -113,7 +113,7 @@ const Project = () => {
           initial={{x:20, opacity: 0}}
           whileInView={{x:0, opacity:1}}
           viewport={{ once: true }}
-          transition={{delay:2, duration:.5, ease:'easeIn'}}
+          transition={{delay:2.5, duration:.5, ease:'easeIn'}}
          
          >
           
@@ -137,23 +137,23 @@ const Project = () => {
           initial={{x:20, opacity: 0}}
           whileInView={{x:0, opacity:1}}
           viewport={{ once: true }}
-          transition={{delay:2.5, duration:.5, ease:'easeIn'}}
+          transition={{delay:3, duration:.5, ease:'easeIn'}}
          >
 
         < Modalfive/>
           
           <h3>LANDING PAGE </h3>
-          <p> The cutest memory game ever and great collaboration contributing code with GIT </p>
+          <p> Create a modern and visually engaging 
+            landing page for an IT company using Figma.</p>
         
           <div className='tech-stack'>
-          
-          <img src={html} alt='html'/>
-          <img src={css} alt='css'/>
-          <img src={javascript} alt='javascript'/>
+          <img src={ui} alt='ui'/>
+          <img src={ux} alt='ux'/>
+          <img src={figma} alt='figma'/>
 
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JS</p>
+          <p>UI</p>
+          <p>UX</p>
+          <p>Figma</p>
         </div>
         </motion.div>
 

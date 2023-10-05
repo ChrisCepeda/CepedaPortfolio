@@ -54,15 +54,17 @@ export default function Modal() {
               </div>
 
               <div className="modal-content">
-                <h4>PROJECT OVERVIEW</h4>
+                <h4>🗂️PROJECT OVERVIEW</h4>
                 <p>In this project we created a memory game and used the browsers localstorage
                   to register score and time. 
                 </p>
                 <h4>PROJECT PROCESS</h4>
-                <p>💡Ideation - Brainstorming <br></br> 📝UX & Design - Sketch & Visual Design <br></br>💻Development - Code and Style </p>
+                <p> • Ideation - Brainstorming <br></br>
+                    • UX & Design - Sketch & Visual Design <br></br> 
+                    • Development - Code and Style </p>
                 
                 
-                <h4>TECHNOLOGY STACK</h4>
+                <h4>⚙️TECHNOLOGY STACK</h4>
                 <div className="tools-used">
                 <img src={figma} alt='figma'/>
                 <img src={html} alt='html'/>
