@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.97adf70a.css",
+    "main.js": "/static/js/main.01c288b2.js",
+    "static/media/ByteBerryLandingpage.pdf": "/static/media/ByteBerryLandingpage.a425273640ff3b428336.pdf",
+    "static/media/DocLounge.pdf": "/static/media/DocLounge.8de39b7d00e3fa1aa0f8.pdf",
+    "static/media/intro.jpg": "/static/media/intro.ff392b30c6c31bab8a7d.jpg",
+    "static/media/byteberry.png": "/static/media/byteberry.4165847b3477c906f115.png",
+    "static/media/doclounge.png": "/static/media/doclounge.ccbd9ddbc4db3a914fb4.png",
+    "static/media/scrumproject.png": "/static/media/scrumproject.4233cd1dca45763aec99.png",
+    "static/media/ecotech.png": "/static/media/ecotech.5446762df47913da030a.png",
+    "static/media/githubicon.png": "/static/media/githubicon.a1d033134fbcaf2e31c2.png",
+    "static/media/memorygame.png": "/static/media/memorygame.86613797ada075166d73.png",
+    "static/media/xampp.png": "/static/media/xampp.fdb0f207b9c9b295b34c.png",
+    "index.html": "/index.html",
+    "static/media/miro-2.svg": "/static/media/miro-2.4eb7b8c5ade4919ee314230cafaa36f7.svg",
+    "main.97adf70a.css.map": "/static/css/main.97adf70a.css.map",
+    "main.01c288b2.js.map": "/static/js/main.01c288b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97adf70a.css",
+    "static/js/main.01c288b2.js"
+  ]
+}
