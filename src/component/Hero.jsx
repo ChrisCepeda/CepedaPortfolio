@@ -14,7 +14,7 @@ const Hero = () => {
       <div className='left'>
        <h1 className="animate__animated animate__fadeInUp">HELLO!</h1>
        <h2 className="animate__animated animate__fadeInUp animate__delay-1s"> 
-        I'm Christina, a teacher, frontend developer and designer. I have gathered a 
+        I'm Christina, a teacher, frontend developer and designer. <br></br>I have gathered a 
         wealth of experience and skills in these fields. <br/><br/>
         
         Contact me if you are interested in any 
@@ -29,7 +29,7 @@ const Hero = () => {
            whileHover={{ scale: 1.1 }}
            whileTap={{ scale: 0.9 }}
            >
-           <p>CONTACT ME</p>  </motion.button> </a></div>
+           <p>CONTACT</p>  </motion.button> </a></div>
 
            <div className="animate__animated animate__fadeInUp animate__delay-2s">
 
@@ -38,7 +38,7 @@ const Hero = () => {
            whileHover={{ scale: 1.1 }}
            whileTap={{ scale: 0.9 }}
            >
-           <p>ABOUT ME</p>  </motion.button> </Link>
+           <p>ABOUT</p>  </motion.button> </Link>
   
       </div>
       </div>

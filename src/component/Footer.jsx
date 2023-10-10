@@ -18,7 +18,6 @@ function submitHandler(e) {
     return 
   }
 
-    
   const emailCollRef = collection(db, 'email')
   addDoc(emailCollRef, {
     email: input,
@@ -67,10 +66,6 @@ function submitHandler(e) {
            </a></div>
 
           </div>
-
-
-   
-
       </div>
 
       <div className='footer-subscription'>

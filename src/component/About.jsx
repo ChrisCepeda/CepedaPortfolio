@@ -26,16 +26,23 @@ const About = () => {
        viewport={{ once: true }}
         transition={{delay:1, duration:0.5, ease:'easeIn'}}>
      
-        <h1>Let's Collaborate!</h1> 
+        <h1>LET'S COLLABORATE!</h1> 
 
         <p>
-            If you're looking for a passionate frontend developer who can infuse creativity into 
-            your web projects, I would love to collaborate with you. <br></br>
+            My story is one of collaboration and growth across various fields. 
+            I've been on an incredible journey as an educator, 
+            a clothing designer, and a recent entrant into the world of web development.
+            
+            I see each project whether it is in education, design or web development an 
+            opportunity to combine my skills and ideas with others, 
+            resulting in innovative and engaging experiences.
+            
+             
             Whether you have a specific project in mind or want to explore new ideas, 
             I'm here to bring your vision to life.<br></br>
 
             Thank you for visiting my portfolio, and I look forward to 
-            connecting with you to create beautiful and functional web experiences together.
+            connecting with you to create beautiful great experiences together.
           </p>
 
           <Link to="/About">
