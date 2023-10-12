@@ -1,10 +1,10 @@
 import React from 'react'
-import './Blog.scss';
+import Wordpressblog from '../component/Wordpressblog'
 
 
 const Blog = () => {
   return (
-   <></>
+   <Wordpressblog/>
   )
 }
 
