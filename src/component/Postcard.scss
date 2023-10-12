@@ -1,0 +1,45 @@
+.post-card{
+
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    max-width: 100%;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px 5px 80px 5px;
+    padding: 10px; 
+    box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
+    background: #ddf7f8;
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    h3{
+      color: #045256;
+      font-weight: 600;
+      margin:25px 1px;
+      background: rgba(248, 240, 240, 0.8);
+      padding: 10px;
+      border-bottom: 1.5px solid #045256;
+  
+    }
+   
+    p{
+      margin: 0;
+    }
+  
+  @media screen and (max-width:767px) {
+     max-width: 100%;
+     justify-self: center;
+    
+  }
+ }
+
+ .post-card-content {
+    flex: 1;
+    padding: 0 10px;
+    text-align: center; /* Optional: Center align the content */
+  }
+  
+  .post-card-content img {
+    max-width: 100%;
+    height: auto;
+  }
