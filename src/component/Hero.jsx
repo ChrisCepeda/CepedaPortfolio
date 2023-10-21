@@ -44,21 +44,28 @@ const Hero = () => {
       </div>
 
       <div className='card-wrapper'>
+
+      <Link to="/About#education">
        <div className='animate__animated animate__fadeInUp animate__delay-3s intro-cardone'>
             <h1>01</h1>
             <h4>EDUCATION</h4>
          </div>
+       </Link>
 
+       <Link to="/projects">
         <div className='animate__animated animate__fadeInUp animate__delay-4s intro-cardtwo'>
           <h1>02</h1>
           <h4>FRONTEND DEVELOPMENT<br></br>
           </h4>
         </div>
+        </Link>
 
+        <Link to="/about">
         <div className='animate__animated animate__fadeInUp animate__delay-5s intro-cardthree'>
           <h1>03</h1>
           <h4>DESIGN<br></br></h4>
         </div>
+        </Link>
 
         </div>
       </div>

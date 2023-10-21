@@ -38,7 +38,7 @@ const About = () => {
             <h4>EDUCATION</h4>
          </div>
     
-         <div className='frontend-text'>
+         <div id="education" className='frontend-text'>
 
             <p>
                With almost a decade of experience in teaching I have developed 
@@ -66,7 +66,7 @@ const About = () => {
             whileInView={{y:0, opacity: 1}}
             viewport={{ once: true }}>
       
-          <div className='intro-cardone'>
+          <div id="frontend"className='intro-cardone'>
             <h1>02</h1>
             <h4>FRONTEND
             DEVELOPMENT</h4>
