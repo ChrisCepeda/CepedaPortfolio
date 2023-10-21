@@ -4,7 +4,7 @@ import Wordpressblog from '../component/Wordpressblog'
 
 const Blog = () => {
   return (
-   <Wordpressblog/>
+ <Wordpressblog />
   )
 }
 
