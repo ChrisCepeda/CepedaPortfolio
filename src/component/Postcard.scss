@@ -10,7 +10,8 @@
     padding: 8px; 
     box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
     background: #ddf7f8;
-   
+    transition: all 500ms;
+
   
     h3{
       color: #045256;
@@ -35,6 +36,11 @@
     
   }
  }
+
+ .post-card:hover{
+  box-shadow: 8px 17px 24px 0 rgba(0, 0, 0, 1);
+  transition: 0.4s;
+ } 
 
  .post-card-content {
     flex: 1;

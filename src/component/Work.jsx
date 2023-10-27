@@ -90,7 +90,7 @@ const Work = () => {
          
          < Modalfour />
         <h3>MEMORY GAME</h3>
-        <p> The cutest memory game ever and great collaboration contributing code with GIT . </p>
+        <p> The cutest memory game ever and great collaboration contributing code with GIT </p>
        
         <div className='tech-stack'>
         
