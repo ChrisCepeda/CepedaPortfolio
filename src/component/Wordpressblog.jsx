@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Wordpressblog.scss';
 import PostCard from './Postcard'; // Import the PostCard component
+import Categories from './Categories';
 
 
 function WordPressPosts() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+
+
 
   useEffect(() => {
     // Fetch data from the WordPress API with _embed parameter
@@ -21,10 +24,16 @@ function WordPressPosts() {
       });
   }, []);
 
+
+
+
   return (
     <div className='blog-container'>
+ 
 
       <div className='blog-intro'>
+
+        <Categories />
       <h1 className="animate__animated animate__fadeInUp">CHRISTINAS BLOG</h1>
       <p className="animate__animated animate__fadeInUp animate__delay-1s"> 
         My blog is where I share my insights, expertise, and inspiration.
@@ -35,7 +44,7 @@ function WordPressPosts() {
       {loading ? (
     <p>Loading...</p>
   ) : (
-    <div className="post-list">
+    <div className="animate__animated animate__fadeInUp animate__delay-2s post-list">
       {posts.map((post) => (
         <PostCard key={post.id} post={post} />
       ))}
@@ -45,6 +54,7 @@ function WordPressPosts() {
     </div>
   );
   }
+
     
 
   export default WordPressPosts

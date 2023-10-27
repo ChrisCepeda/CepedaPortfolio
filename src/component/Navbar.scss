@@ -1,12 +1,9 @@
 .Nav {
     background-color: transparent;
     width: 1060px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     max-width: 100%;
 
-    
-   
-    
 
 .Navbar {
     display: flex;
@@ -25,6 +22,7 @@
    
     @media screen and (max-width:768px) {
     font-size:0.9em;
+    margin-left:5px;
     
    }
 }

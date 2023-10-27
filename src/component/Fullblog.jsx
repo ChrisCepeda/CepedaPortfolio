@@ -55,9 +55,10 @@ function FullBlogContent() {
     return (
         <div className="full-blog-content">
             <h2>{blogContent.title.rendered}</h2>
-            <p>Published on: {formattedDate}</p>
 
             <div style={{backgroundColor:'#fff'}}dangerouslySetInnerHTML={{ __html: blogContent.content.rendered }} />
+           
+            <p>Published on {formattedDate}</p>
 
             <div className='goback-button'>
             <Link to="/Blog">
