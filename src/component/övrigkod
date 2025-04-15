@@ -1,0 +1,78 @@
+    <div className='card-wrapper'>
+
+      <Link to="/About#education">
+       <div className='animate__animated animate__fadeInUp animate__delay-3s intro-cardone'>
+            <h1>01</h1>
+            <h4>EDUCATION</h4>
+         </div>
+       </Link>
+
+       <Link to="/projects">
+        <div className='animate__animated animate__fadeInUp animate__delay-4s intro-cardtwo'>
+          <h1>02</h1>
+          <h4>FRONTEND DEVELOPMENT<br></br>
+          </h4>
+        </div>
+        </Link>
+
+        <Link to="/about">
+        <div className='animate__animated animate__fadeInUp animate__delay-5s intro-cardthree'>
+          <h1>03</h1>
+          <h4>DESIGN<br></br></h4>
+        </div>
+        </Link>
+        .intro-cardone{
+            max-width: 100%;
+            width: 200px;
+            height: 180px;
+            border-radius: 5px 5px 80px 5px;
+            margin: 10px;
+            box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
+            background: #ddf7f8;
+            backdrop-filter: blur 5px;
+         
+          @media screen and (max-width:768px) {
+             max-width: 100%;
+             justify-self: center;
+              
+          }
+        }
+        
+        .intro-cardtwo{
+          max-width: 100%;
+          width: 200px;
+          height: 180px;
+          margin: 10px;
+          box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
+          background-color: #ddf7f8;          
+          backdrop-filter: blur 5px;
+          border-radius: 5px 5px 80px 5px;
+        
+        @media screen and (max-width:768px) {
+           max-width: 100%;
+           justify-self: center;   
+        }
+        }
+        
+        .intro-cardthree{
+          max-width: 100%;
+          width: 200px;
+          height: 180px;
+          margin: 10px;
+          box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
+          background-color: #ddf7f8;          
+          backdrop-filter: blur 5px;
+          border-radius: 5px 5px 80px 5px;
+        
+        @media screen and (max-width:768px) {
+           max-width: 100%;
+           justify-self: center; 
+          }
+          }
+        
+    .intro-cardone:hover,
+    .intro-cardtwo:hover,
+    .intro-cardthree:hover{
+     box-shadow: 8px 17px 24px 0 rgba(0, 0, 0, 1);
+     transition: 0.4s;
+    } 

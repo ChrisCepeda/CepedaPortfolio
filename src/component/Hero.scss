@@ -1,8 +1,9 @@
 .hero{
   width: 1060px;
+  margin: 0 auto;
   max-width: 100%;
 
-}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -16,15 +17,8 @@
     padding: 20px;
 }
 
-/*
-@media screen and (max-width:1024px) {
-  grid-template-columns: 1fr 1fr;
-  margin:2px;
-  max-width: 100%;
-  padding: 20px;
-
-}*/
 }
+
 .container h1{
     margin-left: 3px;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -43,103 +37,6 @@
 
 }
 
-.card-wrapper{
-        
-  padding: 40px 0 40px 0;
-  width: 700px;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-
-  @media  screen and (max-width: 767px) {
-    grid-template-columns: 1fr;
-    margin:0;
-    width: 100%; 
-    justify-items: center;
-  }
-
-
-h1 {
-  font-size: 7em;
-  font-weight: 900;
-  font-family: 'Barlow Semi Condensed', sans-serif;       
-        color: rgb(105, 60, 82);        
-        pointer-events: none;
-        text-align: center;
-        bottom: 20px;
-        opacity: 0.5;
-        margin-block: -14px; 
-}
-
-h4 {
-  font-size: 1.8em;
-  font-family: 'Barlow Semi Condensed';  
-  font-weight: 500;     
-  color: rgb(25, 61, 49);        
-  pointer-events: none;
-  text-align: center;
-  margin-block: -3rem;
-}
-
-
-.intro-cardone{
-    max-width: 100%;
-    width: 200px;
-    height: 180px;
-    border-radius: 5px 5px 80px 5px;
-    margin: 10px;
-    box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
-    background: #ddf7f8;
-    backdrop-filter: blur 5px;
- 
-  @media screen and (max-width:768px) {
-     max-width: 100%;
-     justify-self: center;
-      
-  }
-}
-
-.intro-cardtwo{
-  max-width: 100%;
-  width: 200px;
-  height: 180px;
-  margin: 10px;
-  box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
-  background-color: #ddf7f8;          
-  backdrop-filter: blur 5px;
-  border-radius: 5px 5px 80px 5px;
-
-@media screen and (max-width:768px) {
-   max-width: 100%;
-   justify-self: center;   
-}
-}
-
-.intro-cardthree{
-  max-width: 100%;
-  width: 200px;
-  height: 180px;
-  margin: 10px;
-  box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
-  background-color: #ddf7f8;          
-  backdrop-filter: blur 5px;
-  border-radius: 5px 5px 80px 5px;
-
-@media screen and (max-width:768px) {
-   max-width: 100%;
-   justify-self: center; }
-  }
-}
-
-    .intro-cardone:hover,
-    .intro-cardtwo:hover,
-    .intro-cardthree:hover{
-     box-shadow: 8px 17px 24px 0 rgba(0, 0, 0, 1);
-     transition: 0.4s;
-    } 
-
- 
   
   .left{
     width: 400px;
@@ -151,12 +48,37 @@ h4 {
     }
   }
 
+    
+  .right{
+    margin: 1rem;
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #9ab8ba;
+    border-radius: 1400px 0 0 0;
+    border-bottom:solid 2px #045256;
+
+
+
+
+    @media  screen and (max-width: 767px) {
+      max-width: 100%; 
+      justify-items: center;
+    }
+  }
   .contact-field{
-    width:220px;
+    width: 220px; 
     display: grid; 
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px; 
   }
+
+  .right img{
+    max-width: 80%;
+    justify-self: end;
+
+  }
+}
 
 
 

@@ -16,7 +16,7 @@ const About = () => {
          transition={{delay:1, duration:0.5, ease:'easeIn'}}
         >
           
-        <img src={computer} alt='christina'/>   
+        <img src={computer} alt='creativity'/>   
          </motion.div>
 
     
