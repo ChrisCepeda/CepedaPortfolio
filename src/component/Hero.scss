@@ -1,88 +1,73 @@
-.hero{
-  width: 1060px;
-  margin: 0 auto;
-  max-width: 100%;
+.hero {
+  display: flex;
+  align-items: center;
+  background-image: url('../assets/images/intro.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 60%;
+  //height: 100vh; // justerar för navbar
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 2rem;
 
-
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2rem  0 0 2rem;
-
-@media screen and (max-width:767px) {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    margin:5px;
-    max-width: 100%;
-    padding: 20px;
-}
-
-}
-
-.container h1{
-    margin-left: 3px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    color: #045256;        
-    pointer-events: none;
-    text-align: left;
-    margin: 0;
-
-}
-
-.container h2{
-  
-  color: #045256;  
-  font-size:1em;    
-  font-weight: 500; 
-
-}
-
-  
-  .left{
-    width: 400px;
-
-    @media  screen and (max-width: 767px) {
-     
-      width: 100%; 
-      justify-items: center;
-    }
+  @media (max-width: 1025px)  {
+    background-size: cover;
+    background-position: center;
   }
 
-    
-  .right{
-    margin: 1rem;
-    width: 500px;
+  @media (min-width: 1024px)and (max-width:1025px) {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px; 
+  }
+
+  .container {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    padding:3rem;
     display: flex;
-    justify-content: flex-end;
-    background-color: #9ab8ba;
-    border-radius: 1400px 0 0 0;
-    border-bottom:solid 2px #045256;
 
-
-
-
-    @media  screen and (max-width: 767px) {
-      max-width: 100%; 
-      justify-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
     }
   }
-  .contact-field{
-    width: 220px; 
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px; 
+
+
+  .overlay-photo {
+    max-width: 340px;
+    height: auto;
+    //border-radius: 8px;
+    background-color: #137479c2;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+
+    @media screen and (max-width: 768px) {
+       max-width:100%;
+      }
   }
 
-  .right img{
-    max-width: 80%;
-    justify-self: end;
+  .hero-text {
+    //transform: translateY(-40px); 
+    padding: 1rem;
+    max-width: 370px;
+    z-index: 3;
 
+    p{
+     color: #045256;
+    }
+        
+  @media screen and (max-width: 768px) {
+       transform: none;
+       margin-right: 0;
+       max-width: 90%;
+       text-align: center;
+       margin-bottom: 1rem;
+     }
   }
+
 }
-
-
-
-  
-
-      
-  

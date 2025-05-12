@@ -4,13 +4,19 @@
 
 
 .Navbar {
-    width: 1060px;
+    max-width: 1060px;
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
     justify-items: flex-end;
     align-items: center;
     padding: 5px;
+
+    @media screen and (max-width:768px) {
+        max-width: 100% !important; 
+        padding: 5px 1rem;      
+        margin: 0;    
+       }
    
  
 }

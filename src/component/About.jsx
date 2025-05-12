@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.scss'
 import { motion } from 'framer-motion'
-import computer from '../assets/images/intro.jpg'
+import workandcomputer from '../assets/images/workandcomputer.jpg'
 import { Link } from 'react-router-dom'
 
 
@@ -16,7 +16,7 @@ const About = () => {
          transition={{delay:1, duration:0.5, ease:'easeIn'}}
         >
           
-        <img src={computer} alt='creativity'/>   
+        <img src={workandcomputer} alt='creativity'/>   
          </motion.div>
 
     
@@ -26,36 +26,31 @@ const About = () => {
        viewport={{ once: true }}
         transition={{delay:1, duration:0.5, ease:'easeIn'}}>
      
-        <h1>LET'S COLLABORATE!</h1> 
-
-        <p>
-            My story is one of collaboration and growth across various fields. 
-            I've been on an incredible journey as an educator, 
-            a clothing designer, and a recent entrant into the world of web development.
-            
-            I see each project whether it is in education, design or web development an 
-            opportunity to combine my skills and ideas with others, 
-            resulting in innovative and engaging experiences.
-            
-             
-            Whether you have a specific project in mind or want to explore new ideas, 
-            I'm here to bring your vision to life.<br></br>
-
-            Thank you for visiting my portfolio, and I look forward to 
-            connecting with you to create beautiful great experiences together.
+        <h1>Let's have a fika!</h1>
+        <p>  Är du intresserad av ett samarbete inom utveckling, utbildning eller kläddesign?
+             Min resa har tagit mig från att driva egen kläddesign- och importverksamhet till 
+             webbutveckling och webbdesign, från klassrummet som lärare 
+             till utbildningsledare på <a href="https://www.berattarministeriet.se"  className="custom-link" target="_blank" rel="noopener noreferrer">Berättarministeriet</a>. 
           </p>
-
-          <Link to="/About">
+          
+        <p> Oavsett om det handlar om design, digitala lösningar eller pedagogiska koncept, 
+           ser jag varje projekt som en chans att samarbeta, skapa värde och väcka engagemang.</p>
+        <p>Har du ett projekt i tankarna – eller bara en idé som du vill bolla? Jag är nyfiken på att höra mer och hjälpa dig förverkliga den.
+        </p>
+      
+        <p> Jag ser fram emot att ses – över en fika eller ett inspirerande samarbete.</p>
+          
+         <a href="mailto:hello@cepeda.se">
           <motion.button className='about-button'
            whileHover={{ scale: 1.1 }}
            whileTap={{ scale: 0.9 }}
            >
-           <p>READ MORE</p>  </motion.button> </Link>
-         
+           <p>KONTAKT</p>  
+           </motion.button>
+           </a> 
           </motion.div>
-      
-          </div>
-          </div>
+     </div>
+   </div>
   )
 };
 
