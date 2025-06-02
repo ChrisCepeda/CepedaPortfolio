@@ -48,15 +48,7 @@ const Project = () => {
           <h3>ECO TECH SOLUTIONS </h3>
           <p> With a unintuitive navigation and outdated design, this IT company needed
             a UX boost.  </p>
-        
-          <div className='tech-stack'>
-              <img src={ui} alt='ui'/>
-              <img src={ux} alt='ux'/>
-              <img src={figma} alt='figma'/>
-              <p>UI</p>
-              <p>UX</p>
-              <p>Figma</p>
-          </div>
+       
         </motion.div>
 
 

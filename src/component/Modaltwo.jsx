@@ -30,8 +30,8 @@ export default function Modal() {
   };
   return (
     <div className="modals">
-      <button className='button-modal' onClick={() => setModalIsOpen(true)}>
-      </button>
+      <button className='button-modal' onClick={() => setModalIsOpen(true)} />
+     
       <AnimatePresence>
         {modalIsOpen && (
           <motion.div
@@ -40,60 +40,67 @@ export default function Modal() {
             exit="hidden"
             variants={overlayVariants}
             className="modal-overlay"
-          >
-            <motion.div
-              className="modal"
-              initial={{ y: "100vh" }}
-              animate={{ y: 0 }}
-              exit={{ y: "100vh" }}
-              transition={{ duration: 0.5 }}
-            >
+             onClick={() => setModalIsOpen(false)} // klick på bakgrund stänger
+                  >
+                    <motion.div
+                      className="modal"
+                      initial={{ y: "100vh" }}
+                      animate={{ y: 0 }}
+                      exit={{ y: "100vh" }}
+                      transition={{ duration: 0.5 }}
+                      onClick={(e) => e.stopPropagation()} // förhindrar att klick inuti stänger
+                    >
+                      {/* Stäng-knapp (kryss) */}
+                      <button
+                        className="modal-close"
+                        onClick={() => setModalIsOpen(false)}
+                        aria-label="Close"
+                      >
+                        &times;
+                      </button>
+              
               <div className="modal-header">
-                <h3 className="modal-title">DOCLOUNGE PROTOTYPE WEBSITE</h3>
+                <h1 style={{color:'#fff'}}>DOC LOUNGE LANDING PAGE</h1>
               </div>
+
               <div className="modal-content">
-              <h4> 🗂️ PROJECT OVERVIEW</h4>
-                <p>In this project the team was assigned to do a B2B product. The client 
-                  Doc Lounge specialises in documentary film distribution of new Nordic and 
-                  international documentaries through events and outreach. Their current website lacked 
-                  an appealing UI design and was hard to navigate, resulting into a non friendely user experience. 
-                  My team had to create an responsive About and Contact page that could attract the B2B market.
+              <h5>PROJEKTÖVERSIKT</h5>
+                <p>I projektet fick mitt team i uppdrag att ta fram en B2B-produkt. Doc Lounge
+                  är specialiserad på distribution av nya nordiska och internationella dokumentärfilmer genom event 
+                  och riktad kommunikation. Deras befintliga webbplats hade en mindre tilltalande grafisk design och var 
+                  svårnavigerad, vilket resulterade till en dålig användarupplevelse. Vårt uppdrag var att skapa 
+                  en prototyp av deras hemsida som kunde attrahera B2B-marknaden och stärka företagets 
+                  digitala närvaro.
                 </p>
-                <h4>🔩 PROJECT PROCESS</h4>
-                <p>
-                • Empathize - Based on the product we wanted to create, we researched and observed 
-                potential users to gain insights into their preferences, behavior, and challenges 
-                related to the existing website.<br></br>
-                • Define - Organization of the information and state users needs and problems. The 
-                team created various personas to recognize the diferent needs of different people.<br></br>
-                • Ideation - Brainstorming and generation of ideas. <br></br> 
-                • Wireframing - Prototype Sceleton, exploring user and client concepts.<br></br>
-                • Prototype - Create solutions <br></br>
-                • Delivery - Present the final solution to client. </p>
-                
-                
-                <h4>⚙️ TOOL STACK</h4>
-                <div className="tools-used">
+                <br></br>
+                <br></br>
+      
+    <h5> KOMPETENSER</h5>
+
+         <div className="tools-used">
+          <div className="tool">
                 <img src={ui} alt='ui'/>
-                <img src={ux} alt='ux'/>
-                <img src={miro} alt='miro'/>
-                <img src={figma} alt='figma'/>
-          
+                <span className="tool-name">UI</span>
                 </div>
+          <div className="tool">
+                <img src={ux} alt='ux'/>
+                <span className="tool-name">UX</span></div>
+          <div className="tool">
+                <img src={miro} alt='miro'/>
+                <span className="tool-name">Miro</span>
+                </div>
+            <div className="tool">
+                <img src={figma} alt='figma'/>
+                <span className="tool-name">Figma</span>
+                </div>
+          </div>
                 
                 <div className='play'>
-                <a href={doclounge}  target="_blank">
+                <a href={doclounge}  target="_blank" rel="noreferrer">
                 OPEN PDF
                 </a>
                 </div>
-              </div>
-              <div className="modal-footer">
-                <button
-                  className="modal-button"
-                  onClick={() => setModalIsOpen(false)}
-                >
-                  Close
-                </button>
+
               </div>
             </motion.div>
           </motion.div>

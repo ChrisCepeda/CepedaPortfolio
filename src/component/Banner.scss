@@ -46,13 +46,17 @@
         max-width: 100%;
         justify-self: center;
       }
+
+      p{
+        font-weight: 400;
+      }
     }
 
 
     .banner-card-one:hover .banner-card-bg, 
     .banner-card-two:hover .banner-card-bg,
     .banner-card-three:hover .banner-card-bg,
-    .banner-card-four:hover .banner-card-four{
+    .banner-card-four:hover .banner-card-bg{
       transform: scale(1.1); 
 
     }

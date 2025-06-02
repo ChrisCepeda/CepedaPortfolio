@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Modalcode.scss";
 import figma from '../assets/images/figma.png'
-import css from '../assets/images/css2.png'
+import bootstrap from '../assets/images/bootstrap.png'
 import javascript from '../assets/images/js.png'
 import react from '../assets/images/react.png'
-import miro from '../assets/images/miro-2.svg'
-import git from '../assets/images/git.png'
-import github from '../assets/images/githubicon.png'
+import api from '../assets/images/api.png'
 
 
 export default function Modal() {
@@ -42,6 +40,7 @@ export default function Modal() {
             exit="hidden"
             variants={overlayVariants}
             className="modal-overlay"
+            onClick={() => setModalIsOpen(false)} // klick på bakgrund stänger
           >
             <motion.div
               className="modal"
@@ -49,58 +48,67 @@ export default function Modal() {
               animate={{ y: 0 }}
               exit={{ y: "100vh" }}
               transition={{ duration: 0.5 }}
+              onClick={(e) => e.stopPropagation()} // förhindrar att klick inuti stänger
             >
-              <div className="modal-header">
-              <h3 className="modal-title">ABOUT E-COMMERCE SITE</h3>
+             {/* Stäng-knapp (kryss) */}
+                      <button
+                        className="modal-close"
+                        onClick={() => setModalIsOpen(false)}
+                        aria-label="Close"
+                      >
+                        &times;
+                      </button>
+
+                <div className="modal-header">
+                <h1 style={{color:'#fff'}}>MOVIE WEBAPPLICATION</h1>
               </div>
 
-              <div className="modal-content">
-                <h4> 🗂️PROJECT OVERVIEW</h4>
-                <p>This project aims to develop a E-commerce website an Agile methodology. 
-                  The primary focus is to ensure an efficent collaboration by 
-                  the adoption of the Scrum framework- the frequent feedback and continuous improvement throughout the development 
-                  lifecycle. 
-                  
-                  The iterative and incremental development process will ensure that the project stays on track and 
-                  fosters effective communication.
-                </p>
-                <h4>🔩PROJECT PROCESS</h4>
-                <p>
-                • Empathize - Based on the product we wanted to sell, we did a researched and observed 
-                potential users to gain insights into their preferences, behavior, and challenges related to online shopping.<br></br>
-                • Define - Organization of the information and state users needs and problems. The 
-                team created various personas to recognize the diferent needs of different people.<br></br>
-                • Ideation - Brainstorming and generation of ideas. <br></br> 
-                • Prototype - Create solutions <br></br>
-                • Development - Code, debug and test </p>
-                
-                
-                <h4>⚙️TECHNOLOGY STACK</h4>
-                <div className="tools-used">
-                <img src={miro} alt='miro'/>
-                <img src={figma} alt='figma'/>
-                <img src={react} alt='react'/>
-                <img src={css} alt='css'/>
-                <img src={javascript} alt='javascript'/>
-                <img src={git} alt='git'/>
-                <img src={github} alt='github'/>
 
-                </div>
+              <div className="modal-content">
+              <h5> PROJEKTÖVERSIKT</h5>
+
+                <p>Projektet var en kombination av moderna webbutvecklingstekniker för att skapa en interaktiv och 
+                  användarvänlig webbapplikation. Genom att använda Figma för att skapa en prototyp, React för komponenthantering, 
+                  OMDb API för 
+                  hämtning av data, Bootstrap för styling och Netlify för distribution, skapades en stabil 
+                  grund för vidare utveckling av applikationen.
+                </p>
+                <br></br>
+                <br></br>
+
+                <h5> KOMPETENSER</h5>
+
+                <div className="tools-used">
+                    <div className="tool">
+                      <img src={react} alt="React" />
+                      <span className="tool-name">React</span>
+                    </div>
+                    <div className="tool">
+                      <img src={javascript} alt="JavaScript" />
+                      <span className="tool-name">JavaScript</span>
+                    </div>
+                    <div className="tool">
+                      <img src={api} alt="API" />
+                      <span className="tool-name">API</span>
+                    </div>
+                    <div className="tool">
+                      <img src={figma} alt="Figma" />
+                      <span className="tool-name">Figma</span>
+                    </div>
+                    <div className="tool">
+                      <img src={bootstrap} alt="Bootstrap" />
+                      <span className="tool-name">Bootstrap</span>
+                    </div>
+                  </div>
+
                 
                 <div className='play'>
-                <a href="https://tranquil-toffee-3f7e41.netlify.app/" target="_blank">
-                VISIT GITHUB
+                <a href="https://cepedamovieapp.netlify.app/" target="_blank" rel="noreferrer">
+                GO TO APP
                 </a>
                 </div>
               </div>
-              <div className="modal-footer">
-                <button
-                  className="modal-button"
-                  onClick={() => setModalIsOpen(false)}
-                >
-                  Close
-                </button>
-              </div>
+
             </motion.div>
           </motion.div>
         )}

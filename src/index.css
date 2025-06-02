@@ -47,13 +47,15 @@ h5{
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 1.5em;
-  color: #045256;}
+  color: #045256;
+  margin:0;
+  margin-bottom: 10px;
 
 @media screen and (max-width: 768px) {
   h5{
     color: #fff;
   }
-  
+}
 }
 
 p{
@@ -61,6 +63,12 @@ p{
   font-weight: 500;
   font-size: 1em;
   color: black;
+
+  @media screen and (max-width: 768px) {
+    
+      color: #fff;
+    
+  }  
 }
 
 a{
