@@ -1,11 +1,14 @@
 .techstack{
-   background-color: #137479;
+   background-color:#d4af37;
    text-align: center;
-   padding: 2rem;
+   padding: 3rem;
 
-   h1{
-    color: #fff;
+   h4{
+    margin: 0;
+       padding: 2rem 0;
+
    }
+
 
    .techstack-container {
     display: flex;
@@ -13,7 +16,6 @@
     gap: 1.5rem;
     justify-content: center;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    padding: 1rem;
   
     @media (max-width: 768px) {
       flex-wrap: nowrap;

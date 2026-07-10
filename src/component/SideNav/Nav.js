@@ -15,8 +15,8 @@ const variants = {
 
 
 const Items = [
-  { id: "0", text: "PROJECTS", to:"/Projects"},
-  { id: "1", text: "BLOG", to: "/Blog"},
+  { id: "0", text: "PORTFOLIO", to:"/Projects"},
+  { id: "1", text: "GALLERY", to: "/Blog"},
   { id: "2", text: "ABOUT", to:"/About"},
   { id: "3", text: "HOME", to: "/Home"},
 ];

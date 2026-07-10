@@ -1,35 +1,44 @@
 .banner-section {
   max-width: 100%;
- // background-color: #8c9a9e;
-  background:#137479;
-  padding: 3rem;
-
-  .banner-container {
-    width: 1060px;
-    margin: 0 auto;
-    display: flex;
+  background-color:#d4af37d6;
   
 
+  .banner-container {
+    max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
+   
     @media (max-width: 768px) {
       flex-direction: column;
       text-align: center;
       max-width: 100%;
+      align-items: center;
+      padding: 0;
+    }
+
+    h4 {
+      text-align: center;
     }
 
     .banner-card-one,
     .banner-card-two,
     .banner-card-three,
     .banner-card-four {
-      display: flex;
-      flex-direction: column;
       position: relative;
+      flex-direction: column;
+      display: flex;
       max-width: 100%;
       width: 250px;
       height: 280px;
       border-radius: 5px;
       margin: 10px;
-      background:#137479;
+      background:#d37135;
       backdrop-filter: blur(5px);
       overflow: hidden; //viktigt för att hålla bakgrundsbilden inne!
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -45,6 +54,11 @@
       @media (max-width: 768px) {
         max-width: 100%;
         justify-self: center;
+        align-items: center;
+
+        h4{
+          margin:0;
+          padding: 20px;}
       }
 
       p{
@@ -68,18 +82,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 55%;
+    height: 80%;
     background-image: url('../assets/images/frontend.jpg');
     background-size: cover;
     background-position: center;
     transition: transform 0.5s ease;
     z-index: 1;
   }
-  .bg-two {
-    flex: 3;
-    background-image: url('../assets/images/userex.jpg');
-  }
-  
+
   .bg-three {
     flex:3;
     background-image: url('../assets/images/edu.jpg');
@@ -90,17 +100,25 @@
   }
 
   .banner-card-content {
-    flex: 1;  
+  margin-top: auto;   
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 10px;
+  z-index: 2;         
+    /*flex: 1;  
     display: flex;
     align-items: flex-end; // Placera texten längst ner
     justify-content: center;
-    font-weight: bold;
     font-size: 1rem;
-    padding-left: 10px;
+    padding-left: 10px;*/
 
 
     p{
       color:#fff;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+
    }
   }
 }}

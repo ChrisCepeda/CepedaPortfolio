@@ -1,10 +1,13 @@
 import React from 'react'
-import Wordpressblog from '../component/Wordpressblog'
+import Gallery from '../component/Gallery'
 
 
 const Blog = () => {
   return (
- <Wordpressblog />
+
+
+ <Gallery />
+
   )
 }
 

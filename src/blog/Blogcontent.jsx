@@ -1,5 +1,5 @@
 import React from 'react'
-import Fullblog from '../component/Fullblog'
+import Fullblog from './Fullblog'
 
 const Blogcontent = () => {
   return (

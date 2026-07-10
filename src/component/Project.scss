@@ -1,249 +1,198 @@
 .project{
+ max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 82px;
+  
     
+.project-wrapper {
 
-  
-    .project-wrapper{
-      max-width: 1060px;
-      margin: 0 auto;
-      padding:3rem;
-      display: flex;
-  
-      @media (max-width: 768px) {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-      }    
-      width: 100%;
-      margin-top: 2rem;
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      
-      @media screen and (max-width: 1024px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top:3rem;
-        max-width: 100%;
-        grid-gap: 20px;
-      }  
-      @media screen and (max-width: 767px) {
-        grid-template-columns: 1fr;
-        margin-top:2rem;
-        max-width: 100%;
-        grid-gap: 20px;
-        padding: 0;
-      }  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;  
+  justify-items: center;
+  padding: 2rem;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
   }
-  .work-cardone{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    max-width: 100%;
-    width: 200px;
-    height: 250px;
-    border-radius: 5px 5px 80px 5px;
-    padding: 10px; 
-    box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
-    background: #ddf7f8;
-    background-image: url('../assets/images/ecotech.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  
-    h3{
-      color: #045256;
-      font-weight: 600;
-      margin:25px 1px;
-      background: rgba(248, 240, 240, 0.8);
-      padding: 10px;
-      border-bottom: 1.5px solid #045256;
-  
-    }
-    h4{
-      color: #045256;
-      font-weight: 600;
-      font-family: 'Barlow Semi Condensed', sans-serif;
-        }
-    p{
-      margin: 0;
-    }
-  
-  @media screen and (max-width:768px) {
-     max-width: 100%;
-     justify-self: center;
-    
-  }
-  }
-    .work-cardtwo{
-      display: grid;
-      grid-template-rows: 1fr 1fr;
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      margin:0;
       max-width: 100%;
-      width: 200px;
-      height: 250px;
-      border-radius: 5px 5px 80px 5px;
-      padding: 10px; 
-      box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
-      background: #ddf7f8;
-      background-image: url('../assets/images/doclounge.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-    
-      h3{
-        color: #045256;
-        font-weight: 600;
-        margin:25px 1px;
-        background: rgba(248, 240, 240, 0.8);
-        padding: 10px;
-        border-bottom: 1.5px solid #045256;
-    
+      grid-gap: 20px;
+      padding: 5px;
+    }  
+}
+
+.work-cardone{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  max-width: 100%;
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: rgba(212, 175, 55);
+  background-image: url('../assets/images/gu.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  h3{
+    color: #045256;
+    font-weight: 600;
+    margin:25px 1px;
+    padding: 10px;
+    border-bottom: 1.5px solid #045256;
+
+  }
+  h4{
+    color: #045256;
+    font-weight: 600;
+    font-family: 'Barlow Semi Condensed', sans-serif;
       }
-     
-      p{
-        margin: 0;
+  p{
+    margin: 0;
+  }
+
+@media screen and (max-width:768px) {
+   max-width: 100%;
+   justify-self: center;
+  
+}
+}
+
+  .work-cardtwo{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 10px; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background: rgba(212, 175, 55);
+    background-image: url('../assets/images/doclounge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    h3{
+      color: #045256;
+      font-weight: 600;
+      margin:25px 1px;
+      padding: 10px;
+      border-bottom: 1.5px solid #045256;
+  
+    }
+   
+    p{
+      margin: 0;
+    }
+  
+  @media screen and (max-width:767px) {
+     max-width: 100%;
+     justify-self: center;
+    
+  }
+ }
+
+ .work-cardthree{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  max-width: 100%;
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: rgba(212, 175, 55);
+  background-image: url('../assets/images/movieapp.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  h3{
+    color: #045256;
+    font-weight: 600;
+    margin:25px 1px;
+    padding: 10px;
+    border-bottom: 1.5px solid #045256;
+
+  }
+  p{
+    margin: 0;
+  }
+
+@media screen and (max-width:768px) {
+   max-width: 100%;
+   justify-self: center;
+  
+}
+}
+.work-cardfour{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  max-width: 100%;
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background:rgba(212, 175, 55);
+  background-image: url('../assets/images/memorygame.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  h3{
+    color: #045256;
+    font-weight: 600;
+    margin:25px 1px;
+    padding: 10px;
+    border-bottom: 1.5px solid #045256;
+
+  }
+  h4{
+    color: #045256;
+    font-weight: 600;
+    font-family: 'Barlow Semi Condensed', sans-serif;
       }
-    
-    @media screen and (max-width:767px) {
-       max-width: 100%;
-       justify-self: center;
-      
-    }
-   }
-  
-   .work-cardthree{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    max-width: 100%;
-    width: 200px;
-    height: 250px;
-    border-radius: 5px 5px 80px 5px;
-    padding: 10px; 
-    box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
-    background: #ddf7f8;
-    background-image: url('../assets/images/scrumproject.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  
-    h3{
-      color: #045256;
-      font-weight: 600;
-      margin:25px 1px;
-      background: rgba(248, 240, 240, 0.8);
-      padding: 10px;
-      border-bottom: 1.5px solid #045256;
-  
-    }
-    p{
-      margin: 0;
-    }
-  
-  @media screen and (max-width:768px) {
-     max-width: 100%;
-     justify-self: center;
-    
-  }
-  }
-  .work-cardfour{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    max-width: 100%;
-    width: 200px;
-    height: 250px;
-    border-radius: 5px 5px 80px 5px;
-    padding: 10px; 
-    box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
-    background: #ddf7f8;
-    background-image: url('../assets/images/memorygame.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  
-    h3{
-      color: #045256;
-      font-weight: 600;
-      margin:25px 1px;
-      background: rgba(248, 240, 240, 0.8);
-      padding: 10px;
-      border-bottom: 1.5px solid #045256;
-  
-    }
-    h4{
-      color: #045256;
-      font-weight: 600;
-      font-family: 'Barlow Semi Condensed', sans-serif;
-        }
-    p{
-      margin: 0;
-    }
-  
-  @media screen and (max-width:768px) {
-     max-width: 100%;
-     justify-self: center;
-    
-  }
+  p{
+    margin: 0;
   }
 
-  .work-cardfive{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    max-width: 100%;
-    width: 200px;
-    height: 250px;
-    border-radius: 5px 5px 80px 5px;
-    padding: 10px; 
-    box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.5);          
-    background: #ddf7f8;
-    background-image: url('../assets/images/byteberry.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+@media screen and (max-width:768px) {
+   max-width: 100%;
+   justify-self: center;
   
-    h3{
-      color: #045256;
-      font-weight: 600;
-      margin:25px 1px;
-      background: rgba(248, 240, 240, 0.8);
-      padding: 10px;
-      border-bottom: 1.5px solid #045256;
-  
-    }
-    h4{
-      color: #045256;
-      font-weight: 600;
-      font-family: 'Barlow Semi Condensed', sans-serif;
-        }
-    p{
-      margin: 0;
-    }
-  
-  @media screen and (max-width:768px) {
-     max-width: 100%;
-     justify-self: center;
-    
-  }
-  }
-  
-  }
-  
-  .work-cardone:hover,
-  .work-cardtwo:hover,
-  .work-cardthree:hover,
-  .work-cardfour:hover,
-  .work-cardfive:hover{
-    box-shadow: 8px 17px 24px 0 rgba(0, 0, 0, 1);
-    transition: 0.3s;
-  
-   } 
-  
-  
-  .tech-stack{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 9px 0 12px -24px;
-    justify-items: center;
-    padding: 0 7px 0 7px;
-  
-    img{
-      width: 70%;
-      aspect-ratio: 3/2;
-      object-fit: contain;
-    }
-  }
+}
+}
 
 
-  
-  
+}
+
+.work-cardone:hover,
+.work-cardtwo:hover,
+.work-cardthree:hover,
+.work-cardfour:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: 0.3s;
+
+ } 
+
+
+.tech-stack{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 9px 0 12px -24px;
+  justify-items: center;
+  padding: 0 7px 0 7px;
+
+  img{
+    width: 70%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+}
+

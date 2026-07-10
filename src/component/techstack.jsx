@@ -34,11 +34,6 @@ const icons = [
     { src: framermotion, alt: 'FramerMotion' },
     { src: bootstrap, alt: 'Bootstrap' },
    
-
-
-
-
-
   ]
   
   const iconVariant = {
@@ -57,7 +52,7 @@ const icons = [
 function techstack() {
   return (
     <div className="techstack">
-              <h1> TECH STACK</h1> 
+              <h4> TECH STACK</h4> 
               {icons.map((icon, i) => (
         <motion.div
           key={icon.alt}

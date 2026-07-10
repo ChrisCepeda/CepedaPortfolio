@@ -1,16 +1,18 @@
 .about{
     max-width: 100%;
-    background-color: #fff;
+    background-color:
+#87ad76;
+
    
 }
 
 .about-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 1060px;
-    margin: 0 auto;
-    max-width: 100%;
-    padding: 2rem 0 2rem 0;
+     max-width: 1060px; /* max bredd, men krymper på mindre skärmar */
+        width: 100%;       /* fyller alltid till 100% av parent */
+        margin: 0 auto;
+        padding: 3rem;
 
     @media screen and (max-width:768px ) {
         width: 100%;
@@ -20,7 +22,7 @@
     }
 
  .image-computer{
-        background-color:rgb(174, 151, 162); 
+        background-color: #c27f14; 
 
         img{
          max-width: 95%; 
@@ -43,7 +45,7 @@
         padding:3rem;
 
         p{
-            color: #045256;  
+            color: #fff;  
             font-size:1em;    
             font-weight: 500;   
             
@@ -51,16 +53,16 @@
     }
 
     .custom-link {
-        color: #045256;  
+        color:#fff ;  
         text-decoration: none;
         font-weight: 500;
         border-bottom: 2px solid transparent;
         transition: all 0.3s ease;
-        border-bottom: 2px solid  rgb(174, 151, 162);
+        border-bottom: 2px solid  #045256;
       
         &:hover {
-          border-bottom: 2px solid  #045256; // underline-effekt vid hover
-          color: rgb(174, 151, 162); // mörkare färg vid hover om du vill
+          border-bottom: 2px solid  #fff; 
+          color:#045256; // mörkare färg vid hover om du vill
           cursor: pointer;
         }
       }
@@ -68,19 +70,21 @@
     .about-button{
         width: 90px;
         height: 30px;
-        background-color:#045256;
-        font-size: medium;
+        //background-color:#045256;
+        background-color:  #045256;
         cursor: pointer;
         border-radius: 5px;
         border: none;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;      
-        letter-spacing: 1px;
-        
+
         p{
             margin:2px;
-            font-family: 'Inter';
-            font-size: 0.6em;
-            color: #fff;    
+            font-family: 'Barlowe Semi Condensed', sans-serif;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #fff;   
+            letter-spacing: 1px;
+ 
         }
     
         }

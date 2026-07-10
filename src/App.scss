@@ -1,13 +1,20 @@
 .app{
+  min-height: 100vh;
+  display: flex;              
+  flex-direction: column;     
+  background-image: url('./assets/images/newintro.jpg');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-color:#EEEFEA;
+  background-position: center top; 
 
-  background-color: #e8f7ee;
 
- 
- max-width: 100%;
- margin: 0 auto; 
-
-  @media screen and (max-width: 1024px)  {
-    background: #9ab8ba;
-    
-  }
+ @media (max-width: 1024px) {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-color: rgb(231, 232, 231);
+  background-position: center top;
+ }
 }
+ 

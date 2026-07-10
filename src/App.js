@@ -3,15 +3,23 @@ import Blog from './pages/Blog'
 import About from './pages/About'
 import Home from './pages/Home'
 import Layout from './pages/Layout'
-import Blogcontent from './pages/Blogcontent'
+import Blogcontent from './blog/Blogcontent'
 import { Routes, Route } from 'react-router-dom'
 import './App.scss'
+import ScrollToTop from './component/ScrollToTop';
+
+
 
 
 function App() {
   return (
+ 
 <div className='app'>
- <Routes>
+
+ <ScrollToTop />
+
+   <Routes>
+
    <Route element={<Layout />}>
   
      <Route index element={<Home />} />
@@ -24,6 +32,7 @@ function App() {
    </Route>
  </Routes>
  </div>
+
 
   )
 }

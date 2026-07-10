@@ -1,13 +1,16 @@
 import React from 'react'
 import Aboutme from '../component/Aboutme'
+import Aboutmebanner from '../component/Aboutmebanner'
 
-const About = () => {
+
+const Abouts = () => {
   return (
-   
-   <Aboutme />
-         
-        
+    <>
+    <Aboutme />
+    <Aboutmebanner />
+
+    </>
   )
 }
 
-export default About 
+export default Abouts

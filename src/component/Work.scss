@@ -1,20 +1,18 @@
 .work{
    width: 100%;
-   max-width: 100%;
-   background-color:#9ab8ba;
+
+   //background-color:#9ab8ba;
+   h4{
+
+    margin: 0;
+       padding: 2rem 0;
+
+   }   
 
   .work-container{
    max-width:1060px;
    margin: 0 auto;
    padding: 3rem;
-
-      h1{
-        color: rgb(25, 61, 49);        
-        pointer-events: none;
-        font-size: 2.1em;
-        
-        
-     }
   }
 
   .work-wrapper{
@@ -32,6 +30,13 @@
       grid-gap: 20px;
       padding: 0;
     }  
+    
+  @media screen and (max-width: 1025px) {
+    grid-template-columns: 1 fr 1fr;
+    padding: 2rem;
+  }
+
+}
 }
 
 .work-cardone{
@@ -43,7 +48,7 @@
   border-radius: 5px;
   padding: 10px; 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  background: #ddf7f8;
+  background: rgba(212, 175, 55);
   background-image: url('../assets/images/gu.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -52,7 +57,6 @@
     color: #045256;
     font-weight: 600;
     margin:25px 1px;
-    background: rgba(248, 240, 240, 0.8);
     padding: 10px;
     border-bottom: 1.5px solid #045256;
 
@@ -82,7 +86,7 @@
     border-radius: 5px;
     padding: 10px; 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background: #ddf7f8;
+    background: rgba(212, 175, 55);
     background-image: url('../assets/images/doclounge.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -91,7 +95,6 @@
       color: #045256;
       font-weight: 600;
       margin:25px 1px;
-      background: rgba(248, 240, 240, 0.8);
       padding: 10px;
       border-bottom: 1.5px solid #045256;
   
@@ -117,7 +120,7 @@
   border-radius: 5px;
   padding: 10px; 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  background: #ddf7f8;
+  background: rgba(212, 175, 55);
   background-image: url('../assets/images/movieapp.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -126,7 +129,6 @@
     color: #045256;
     font-weight: 600;
     margin:25px 1px;
-    background: rgba(248, 240, 240, 0.8);
     padding: 10px;
     border-bottom: 1.5px solid #045256;
 
@@ -150,7 +152,7 @@
   border-radius: 5px;
   padding: 10px; 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  background: #ddf7f8;
+  background:rgba(212, 175, 55);
   background-image: url('../assets/images/memorygame.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -159,7 +161,6 @@
     color: #045256;
     font-weight: 600;
     margin:25px 1px;
-    background: rgba(248, 240, 240, 0.8);
     padding: 10px;
     border-bottom: 1.5px solid #045256;
 
@@ -180,8 +181,6 @@
 }
 }
 
-
-}
 
 .work-cardone:hover,
 .work-cardtwo:hover,
@@ -213,4 +212,3 @@
     margin-top: 3rem; // ger luft ovanför
     padding: 1rem;}
 
-//sam inez mamma pappa leah bellan magda evi gabi jonte nono loreto t

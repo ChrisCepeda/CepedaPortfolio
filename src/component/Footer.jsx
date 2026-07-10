@@ -1,9 +1,12 @@
 import React from 'react'
 import './Footer.scss'
-import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaRegEnvelope } from 'react-icons/fa'
 import { useState } from "react";
 import {db} from '../firebase';
 import { addDoc, collection } from 'firebase/firestore'
+import { NavLink } from 'react-router-dom'
+
+
 
 
 function Footer(){
@@ -62,7 +65,7 @@ function submitHandler(e) {
           <div className='footer-github'>  
           <a href="https://github.com/ChrisCepeda" 
            target="_blank" rel="noreferrer"> 
-           <FaGithub size={26} style={{verticalAlign:'bottom'}}></FaGithub>
+           <FaInstagram size={26} style={{verticalAlign:'bottom'}}></FaInstagram>
            </a></div>
 
           </div>
@@ -70,9 +73,7 @@ function submitHandler(e) {
 
       <div className='footer-subscription'>
           <div className='footer-title'>
-            <p>SIGN UP FOR NEWSLETTER
-    
-            </p>
+            <p>REQUEST MY CV</p>
           </div>
           <form onSubmit={submitHandler}>
             <input className='form' type="email" value={input} onChange={ e =>setInput(e.target.value)} />
@@ -83,23 +84,26 @@ function submitHandler(e) {
            </div>
 
            <div className="copyright">
-            <p> 2023© CEPEDA.SE</p>
+             <a href="mailto:hello@cepeda.se">
+            <p> 2026© CEPEDA.SE</p></a>
            </div>
 
       </div>
 
       <div className='social'>
       <div className='footer-title'>
-            <p>LATEST BLOG</p>
+            <p>EXPLORE</p>
           </div>
      
-          <ul className='bloglist'>
-            <li>LEMONTREE</li>
-            <li>CLIENT PROJECT</li>
-            <li>VACAY</li>
-            <li>MERN PROJECT</li>
-            
-          </ul>
+               <div  className="footer-links">
+                 <ul>
+                     <li><NavLink to="/Projects" activeclassname="active">PORTFOLIO</NavLink></li>
+                     <li><NavLink to="/Blog" activeclassname="active">GALLERY</NavLink></li>
+                     <li><NavLink to="/About" activeclassame='active'>ABOUT</NavLink></li>
+                     <li><NavLink to="/Home" activeclassname='active'>HOME</NavLink> </li>
+                    
+                 </ul>
+               </div>
       </div>
 
     </div>

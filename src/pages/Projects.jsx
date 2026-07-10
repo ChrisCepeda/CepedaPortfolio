@@ -3,7 +3,11 @@ import Project from '../component/Project'
 
 const Projects = () => {
   return (
+    <>
     <Project />
+ 
+    
+    </>
   )
 }
 

@@ -26,16 +26,18 @@ const Work = () => {
   return (
     <div className='work'>
 
-      <div className='work-container'>
-    
-            <motion.div
+         <motion.div
             initial={{x:20, opacity: 0,}}
             whileInView={{x:0, opacity: 1,}}
             viewport={{ once: true }}
             transition={{duration:0.5, ease:'easeIn'}}
             >
-              <h1>  PROJEKT</h1>
+              <h4>  PORTFOLIO</h4>
             </motion.div> 
+
+      <div className='work-container'>
+    
+         
 
       <div className='work-wrapper'>
      
@@ -46,8 +48,8 @@ const Work = () => {
         transition={{delay:1, duration:.3, ease:'easeIn'}}>
          
          < Modalone />
-        <h3>GÖTEBORGS UNIVERSITET</h3>
-        <p>Lektionsdesign och utförande av kursmomentet "Storytelling" i lärarutbildningen F-6.</p>
+        <h3>GBG UNIVERSITET</h3>
+        <p>Lärarutbildningen</p>
         <div className='tech-stack'>
         <img src={didaktik} alt='didaktik'/>
         <img src={pedagogik} alt='pedagogik'/>
@@ -64,7 +66,7 @@ const Work = () => {
          
          < Modaltwo />
         <h3>LANDING PAGE</h3>
-        <p>B2B projekt - landing page prototyp designad med Figma och Miro. </p>
+        <p>Landing page prototyp</p>
        
         <div className='tech-stack'>
         <img src={ui} alt='ui'/>
@@ -85,7 +87,7 @@ const Work = () => {
          
          < Modalthree />
         <h3>MOVIE WEBAPP</h3>
-        <p> Interaktiv och dynamisk webbapplikation som använder API för att hämta data. </p>
+        <p> Webbapplikation </p>
        
         <div className='tech-stack'>
         <img src={figma} alt='figma'/>
@@ -104,7 +106,7 @@ const Work = () => {
          
          < Modalfour />
         <h3>MEMORY GAME</h3>
-        <p> The cutest memory game ever and great collaboration contributing code with GIT </p>
+        <p> The cutest memory game ever </p>
        
         <div className='tech-stack'>
         
@@ -126,7 +128,7 @@ const Work = () => {
        whileHover={{ scale: 1.1 }}
        whileTap={{ scale: 0.9 }}
       >
-      <p style={{color: '#fff'}}>FLER PROJEKT</p> 
+      <p style={{color: '#fff'}}>más</p> 
        </motion.button>
         </Link>
         </div>
